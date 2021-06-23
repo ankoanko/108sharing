@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= render "layouts/analytics_gtm_head" if Setting.ga_tracking_id.present? %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= tag :meta, name: "google-api-key", content: ENV['GOOGLE_MAP_API_KEY'] %>
+    <%= display_meta_tags(default_meta_tags) %>
+    <%= favicon_link_tag '/apple-touch-icon.png', rel:'apple-touch-icon-precomposed', type:'image/png' %>
+    <%= favicon_link_tag '/favicon.ico' %>
+
+    <%= stylesheet_pack_tag 'style' %>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/locale' %>
+    <%= yield :stripe_head_tag %>
+    <%= content_tag :span, '', id: "payment-required", data: Setting.payment_required %>
+  </head>
+  <body>
+    <%= react_component("organisms/Header",
+      {
+        isSignedIn: user_signed_in?,
+        user: UserSerializer.serialize(current_user),
+        lang: {
+          en_path: url_for(params.permit().merge(locale: :en)),
+          ja_path: url_for(params.permit().merge(locale: :ja)),
+        },
+      },
+      prerender: false) %>
+    <main>
+      <%= yield %>
+    </main>
+    <%= react_component 'organisms/Footer', { messages: flash_messages } %>
+
+    <%= react_component("atoms/GlobalModal", prerender: false) %>
+    <%= react_component 'organisms/FlashMessage', { messages: flash_messages } %>
+    <% if request_from_demo_site? %>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4253127.js"></script>
+    <% end %>
+  </body>
+</html>

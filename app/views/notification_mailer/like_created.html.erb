@@ -1,0 +1,9 @@
+<%= @user.username %>さん、こんにちは！
+
+<%= @like.user.username %> さんからイイねがつきました
+
+以下のリンクから、内容をご確認ください。
+
+<a href="<%= @notification.url %>"><%= @notification.url %></a>
+
+<%= Setting.default_site %>

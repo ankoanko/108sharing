@@ -1,0 +1,8 @@
+<% set_meta_tags title: @user&.username %>
+<% set_meta_tags og: { title: @user&.username } %>
+
+<%= react_component("pages/users/show", {
+  user: @user_json,
+  posts: @posts_json,
+  reviews: @reviews_json
+}, prerender: false) %>

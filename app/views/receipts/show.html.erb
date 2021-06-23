@@ -1,0 +1,23 @@
+<div class="receipt">
+    <header class="receipt__header">
+        <div>
+            <h1 class="receipt__heading"><%= Setting.default_site %>からの領収書</h1>
+            <p>発行No.<%= @receipt.no %></p>
+        </div>
+
+        <div class="receipt__logo">
+            <%= wicked_pdf_image_tag('/images/custom/logo-black.svg') %>
+        </div>
+    </header>
+
+    <h2 class="receipt__address"><%= @receipt.name %> <span>様</span></h2>
+
+    <dl class="receipt__list">
+        <dt>商品名</dt>
+        <dd><%= @reservation.post_name %></dd>
+        <dt>利用日時</dt>
+        <dd><%= @reservation.start_date %> ~ <%= @reservation.end_date %></dd>
+        <dt>金額</dt>
+        <dd><%= number_to_currency @reservation.price, locale: :ja %></dd>
+    </dl>
+</div>

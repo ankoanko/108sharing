@@ -1,0 +1,61 @@
+{
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig-lint-staged.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "useJSXTextNode": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "rules": {
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-useless-constructor": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "prettier/prettier": ["error"] // Reference to .prettierrc
+  },
+  // 不要であれば消す。いらないかも railsのwebpackで必要？
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "modules": ["frontend", "node_modules"]
+          }
+        }
+      }
+    }
+  }
+}

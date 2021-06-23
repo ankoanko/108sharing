@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/InputText.tsx should matches to the snapshot 1`] = `
+<FormItem>
+  <div
+    className="relative w-ful"
+  >
+    <input
+      className="block w-full px-3 py-2 bg-neutral-100 rounded outline-none appearance-none border-2 border-transparent focus:border-2 focus:border-primary focus:bg-white"
+      defaultValue="test"
+      id="test"
+      name="test"
+      onBlur={[Function]}
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+    />
+  </div>
+</FormItem>
+`;

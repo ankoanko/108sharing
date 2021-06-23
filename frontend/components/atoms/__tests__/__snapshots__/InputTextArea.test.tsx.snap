@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/InputTextArea.tsx should matches to the snapshot 1`] = `
+<FormItem>
+  <textarea
+    className="
+          block w-full h-40 px-3 py-2 bg-neutral-100 rounded outline-none
+          border-2 border-transparent
+          focus:border-2 focus:border-primary focus:bg-white
+        "
+    defaultValue="test"
+    id="test"
+    name="test"
+  />
+</FormItem>
+`;

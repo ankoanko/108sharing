@@ -1,0 +1,5 @@
+<%= react_component("pages/contacts/new",
+  {
+    user: UserSerializer.serialize(current_user, params: {current_user: current_user})
+  }, prerender: false) %>
+

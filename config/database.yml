@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV.fetch('DATABASE_URL','postgres://postgres:@db') %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch('DATABASE_BASENAME', '108sharing') + '_' + Rails.env %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch('DATABASE_BASENAME', '108sharing') + '_' + Rails.env %>
+  url: <%= ENV['TEST_DATABASE_URL'] %>
+
+production:
+  <<: *default
+  database: <%= ENV['DATABASE_NAME'] || '108sharing_production' %>
+  username: <%= ENV['DATABASE_USER'] || '108sharing' %>
+  password: <%= ENV['DATABASE_PASS'] || '' %>
+  url: <%= ENV['DATABASE_URL'] %>

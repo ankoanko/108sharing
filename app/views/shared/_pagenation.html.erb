@@ -1,0 +1,29 @@
+<nav class="pagination c-pagenation" role="navigation" aria-label="pager">
+  <span class="first">
+    <% link_to "#" do %>
+      <i class="fas fa-angle-double-left"></i>
+    <% end %>
+  </span>
+  <span class="prev">
+    <% link_to "#" do %>
+      <i class="fas fa-angle-left"></i>
+    <% end %>
+  </span>
+  <span class="page">
+    <%= link_to "1", "#" %>
+  </span>
+  <span class="page current">2 </span>
+  <span class="page">
+    <%= link_to "3", "#" %>
+  </span>
+  <span class="next">
+    <% link_to "#" do %>
+      <i class="fas fa-angle-right"></i>
+    <% end %>
+  </span>
+  <span class="last">
+    <% link_to "#" do %>
+      <i class="fas fa-angle-double-right"></i>
+    <% end %>
+  </span>
+</nav>

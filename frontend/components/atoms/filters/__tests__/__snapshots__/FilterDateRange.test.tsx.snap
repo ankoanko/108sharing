@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/filters/FilterDateRange.tsx should matches to the snapshot 1`] = `
+<FilterLayout
+  hasValue={false}
+  label="Date"
+  onApply={[Function]}
+  onClear={[Function]}
+  setPanelIsOpen={[Function]}
+>
+  <ForwardRef(render)
+    styles={
+      Object {
+        "map": undefined,
+        "name": "5m9ymt",
+        "next": undefined,
+        "styles": "
+  .DateRangePicker {
+    display: block;
+  }
+  .DateRangePickerInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #F7F7F7;
+    border:none;
+  }
+  .DateInput {
+    background-color: transparent;
+    flex-grow: 1;
+    width: 0;
+  }
+  .DateInput_input {
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    color: inherit;
+    font-weight: normal;
+  }
+  .DateRangePickerInput_arrow {
+    svg {
+      display: none;
+    }
+    &:after {
+      content: \\"→\\";
+    }
+  }
+  
+  .CalendarDay {
+    border-radius: 9999px;
+    background-size: 80%;
+    background-position: center;
+  }
+  .CalendarDay.CalendarDay__default {
+    border: none;
+  }
+  .CalendarDay__selected_span {
+    background: #E2F9F7;
+    border: none;
+    border-radius: 0;
+    color: #212529;
+    position: relative;
+  }
+  .CalendarDay__selected {
+    background-color: #08C4B3;
+    border: none;
+    color: white;
+  }
+  .CalendarDay__selected:hover {
+    background-color: #08C4B3;
+    color: white;
+  }
+  .CalendarDay__hovered_span:hover,
+  .CalendarDay__hovered_span {
+    background: #E2F9F7;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .CalendarDay__selected_start,
+  .CalendarDay__selected_end {
+    position: relative;
+    font-weight: bold;
+    
+    &:before {
+      content: \\"\\";
+      background-color: #E2F9F7;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+    
+    &:after {
+      content: \\"\\";
+      background-color: #08C4B3;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      border-radius: 9999px;
+    }
+  }
+  .CalendarDay__selected_start:before {
+    left: 50%;
+  }
+  .CalendarDay__selected_end:before {
+    right: 50%;
+  }  
+  
+  .CalendarDay.CalendarDay__blocked_calendar {
+    background: #EAEDEF;
+    border: none;
+    color: #B5B5B5;
+  }
+  
+  .CalendarDay__custom_day_inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .DayPickerNavigation_custom_prev,
+  .DayPickerNavigation_custom_next {
+    position: absolute;    
+    top: 24px;
+  }
+  
+  .DayPickerNavigation_custom_prev {
+    left: 38px;
+  }
+  .DayPickerNavigation_custom_next {
+    right: 38px;
+  }
+
+",
+        "toString": [Function],
+      }
+    }
+  />
+  <div
+    className="flex justify-center"
+  >
+    <DayPickerRangeController
+      calendarInfoPosition="bottom"
+      dayPickerNavigationInlineStyles={null}
+      daySize={39}
+      daysViolatingMinNightsCanBeClicked={false}
+      disabled={false}
+      enableOutsideDays={false}
+      endDate={null}
+      firstDayOfWeek={null}
+      focusedInput="startDate"
+      getMinNightsForHoverDate={[Function]}
+      hideKeyboardShortcutsPanel={true}
+      horizontalMonthPadding={13}
+      initialVisibleMonth={null}
+      isDayBlocked={[Function]}
+      isDayHighlighted={[Function]}
+      isFocused={false}
+      isOutsideRange={[Function]}
+      isRTL={false}
+      keepOpenOnDateSelect={false}
+      maxDate={null}
+      minDate={null}
+      minimumNights={1}
+      monthFormat="YYYY年M月"
+      navNext={
+        <div
+          className="absolute top-0 right-0 mt-5 mx-6 text-primary w-8 h-8 rounded-full flex items-center justify-center"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f054",
+                  "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
+                ],
+                "iconName": "chevron-right",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </div>
+      }
+      navPosition="navPositionTop"
+      navPrev={
+        <div
+          className="absolute top-0 left-0 mt-5 mx-6 text-primary w-8 h-8 rounded-full flex items-center justify-center"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f053",
+                  "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
+                ],
+                "iconName": "chevron-left",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </div>
+      }
+      noBorder={true}
+      noNavButtons={false}
+      noNavNextButton={false}
+      noNavPrevButton={false}
+      numberOfMonths={2}
+      onBlur={[Function]}
+      onClose={[Function]}
+      onDatesChange={[Function]}
+      onFocusChange={[Function]}
+      onNextMonthClick={[Function]}
+      onOutsideClick={[Function]}
+      onPrevMonthClick={[Function]}
+      onShiftTab={[Function]}
+      onTab={[Function]}
+      orientation="horizontal"
+      phrases={
+        Object {
+          "calendarLabel": "Calendar",
+          "chooseAvailableDate": [Function],
+          "chooseAvailableEndDate": [Function],
+          "chooseAvailableStartDate": [Function],
+          "dateIsSelected": [Function],
+          "dateIsSelectedAsEndDate": [Function],
+          "dateIsSelectedAsStartDate": [Function],
+          "dateIsUnavailable": [Function],
+          "enterKey": "Enter key",
+          "escape": "Escape key",
+          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+          "homeEnd": "Home and end keys",
+          "jumpToNextMonth": "Move forward to switch to the next month.",
+          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+          "keyboardShortcuts": "Keyboard Shortcuts",
+          "leftArrowRightArrow": "Right and left arrow keys",
+          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+          "moveFocusByOneMonth": "Switch months.",
+          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+          "openThisPanel": "Open this panel.",
+          "pageUpPageDown": "page up and page down keys",
+          "questionMark": "Question mark",
+          "returnFocusToInput": "Return to the date input field.",
+          "roleDescription": "datepicker",
+          "selectFocusedDate": "Select the date in focus.",
+          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+          "upArrowDownArrow": "up and down arrow keys",
+        }
+      }
+      renderCalendarInfo={null}
+      renderDayContents={[Function]}
+      renderMonthElement={null}
+      renderMonthText={null}
+      renderNavNextButton={null}
+      renderNavPrevButton={null}
+      renderWeekHeaderElement={null}
+      showKeyboardShortcuts={false}
+      startDate={null}
+      verticalHeight={null}
+      weekDayFormat="dd"
+      withPortal={false}
+    />
+  </div>
+</FilterLayout>
+`;

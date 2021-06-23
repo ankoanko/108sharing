@@ -1,0 +1,10 @@
+<%= react_component("pages/settings/bankAccount",
+  {
+    user: @user_json,
+    identification: @identification_json,
+    bank_account: @bank_account_json,
+    address: @address_json,
+    payment_histories: @payment_histories_json,
+    available_balance: @available_balance,
+  },
+  prerender: false) %>

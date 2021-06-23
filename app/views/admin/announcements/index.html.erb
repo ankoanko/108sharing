@@ -1,0 +1,7 @@
+<% set_meta_tags title: I18n.t("activerecord.models.announcement") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.announcement") } %>
+
+<%= react_component("pages/admin/announcements",
+  { announcements: @announcements_json},
+  prerender: false,
+)%>

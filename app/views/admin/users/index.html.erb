@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.user") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.user") } %>
+
+<%= react_component("pages/admin/users",
+  { users: @users_json },
+  prerender: false) %>

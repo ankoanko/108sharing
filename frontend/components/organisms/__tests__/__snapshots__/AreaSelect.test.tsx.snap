@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`organisms/AreaSelect should matches to the snapshot 1`] = `
+<div>
+  <h1
+    className="text-2xl font-bold mb-6"
+  >
+    title
+  </h1>
+  <ul
+    className="flex flex-wrap lg:flex-row -my-1 -mx-2"
+  >
+    <li
+      className="w-1/2 lg:w-1/4 py-1 px-2"
+      key="tokyo"
+    >
+      <div
+        className="relative w-full h-50 lg:h-90 flex items-center justify-center rounded-md"
+      >
+        <a
+          className="block"
+          href="/posts/search?area=Tokyo"
+        >
+          <div
+            className="absolute bottom-0 inset-x-0 flex items-end justify-center text-white z-1 text-2xl font-bold mb-6"
+          >
+            <span>
+              Tokyo
+            </span>
+          </div>
+          <img
+            alt=""
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/images/top/img_tokyo.jpg"
+          />
+          <div
+            css={
+              Object {
+                "map": undefined,
+                "name": "1vhbbox",
+                "next": undefined,
+                "styles": "
+                    position: absolute;
+                    background-image: linear-gradient(
+                      0deg,
+                      #000000 0%,
+                      rgba(0, 0, 0, 0.82) 52.08%,
+                      rgba(0, 0, 0, 0) 100%
+                    );
+                    opacity: 0.52;
+                    height: 25%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                  ",
+                "toString": [Function],
+              }
+            }
+          />
+        </a>
+      </div>
+    </li>
+    <li
+      className="w-1/2 lg:w-1/4 py-1 px-2"
+      key="osaka"
+    >
+      <div
+        className="relative w-full h-50 lg:h-90 flex items-center justify-center rounded-md"
+      >
+        <a
+          className="block"
+          href="/posts/search?area=Osaka"
+        >
+          <div
+            className="absolute bottom-0 inset-x-0 flex items-end justify-center text-white z-1 text-2xl font-bold mb-6"
+          >
+            <span>
+              Osaka
+            </span>
+          </div>
+          <img
+            alt=""
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/images/top/img_osaka.jpg"
+          />
+          <div
+            css={
+              Object {
+                "map": undefined,
+                "name": "1vhbbox",
+                "next": undefined,
+                "styles": "
+                    position: absolute;
+                    background-image: linear-gradient(
+                      0deg,
+                      #000000 0%,
+                      rgba(0, 0, 0, 0.82) 52.08%,
+                      rgba(0, 0, 0, 0) 100%
+                    );
+                    opacity: 0.52;
+                    height: 25%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                  ",
+                "toString": [Function],
+              }
+            }
+          />
+        </a>
+      </div>
+    </li>
+    <li
+      className="w-1/2 lg:w-1/4 py-1 px-2"
+      key="kyoto"
+    >
+      <div
+        className="relative w-full h-50 lg:h-90 flex items-center justify-center rounded-md"
+      >
+        <a
+          className="block"
+          href="/posts/search?area=Kyoto"
+        >
+          <div
+            className="absolute bottom-0 inset-x-0 flex items-end justify-center text-white z-1 text-2xl font-bold mb-6"
+          >
+            <span>
+              Kyoto
+            </span>
+          </div>
+          <img
+            alt=""
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/images/top/img_kyoto.jpg"
+          />
+          <div
+            css={
+              Object {
+                "map": undefined,
+                "name": "1vhbbox",
+                "next": undefined,
+                "styles": "
+                    position: absolute;
+                    background-image: linear-gradient(
+                      0deg,
+                      #000000 0%,
+                      rgba(0, 0, 0, 0.82) 52.08%,
+                      rgba(0, 0, 0, 0) 100%
+                    );
+                    opacity: 0.52;
+                    height: 25%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                  ",
+                "toString": [Function],
+              }
+            }
+          />
+        </a>
+      </div>
+    </li>
+    <li
+      className="w-1/2 lg:w-1/4 py-1 px-2"
+      key="sapporo"
+    >
+      <div
+        className="relative w-full h-50 lg:h-90 flex items-center justify-center rounded-md"
+      >
+        <a
+          className="block"
+          href="/posts/search?area=Sapporo"
+        >
+          <div
+            className="absolute bottom-0 inset-x-0 flex items-end justify-center text-white z-1 text-2xl font-bold mb-6"
+          >
+            <span>
+              Sapporo
+            </span>
+          </div>
+          <img
+            alt=""
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/images/top/img_sapporo.jpg"
+          />
+          <div
+            css={
+              Object {
+                "map": undefined,
+                "name": "1vhbbox",
+                "next": undefined,
+                "styles": "
+                    position: absolute;
+                    background-image: linear-gradient(
+                      0deg,
+                      #000000 0%,
+                      rgba(0, 0, 0, 0.82) 52.08%,
+                      rgba(0, 0, 0, 0) 100%
+                    );
+                    opacity: 0.52;
+                    height: 25%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                  ",
+                "toString": [Function],
+              }
+            }
+          />
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

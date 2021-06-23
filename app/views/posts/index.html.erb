@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("meta.post.index") %>
+<% set_meta_tags og: { title: I18n.t("meta.post.index") } %>
+
+<%= react_component("pages/posts",
+  { posts: @posts_json },
+  prerender: false) %>

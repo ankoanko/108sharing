@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/Select.tsx should matches to the snapshot 1`] = `
+<FormItem
+  error={null}
+  label="Select"
+  required={true}
+>
+  <label
+    className="relative block"
+  >
+    <select
+      className="appearance-none m-0 bg-transparent outline-none text-current relative z-1 w-full py-1 px-3 leading-8 rounded-md border-2 border-transparent focus:shadow-none focus:border-2 focus:border-primary"
+      defaultValue="value2"
+      id="Select Box"
+      name="Select Box"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      required={true}
+    >
+      <option
+        key="value1"
+        value="value1"
+      >
+        option1
+      </option>
+      <option
+        key="value2"
+        value="value2"
+      >
+        option2
+      </option>
+      <option
+        key="value3"
+        value="value3"
+      >
+        option3
+      </option>
+    </select>
+    <div
+      className="absolute inset-0 rounded-md border border-neutral-300"
+    />
+    <div
+      className="absolute right-0 inset-y-0 flex items-center mr-4"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="text-sm"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f078",
+              "M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z",
+            ],
+            "iconName": "chevron-down",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+    </div>
+  </label>
+</FormItem>
+`;

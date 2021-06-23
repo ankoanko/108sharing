@@ -1,0 +1,15 @@
+<%= @user.username %>様
+
+下記の支払いが失敗しました。
+
+金額：¥<%= @payout.amount %>
+受付日時：<%= I18n.l(@payout.created_at, format: :long) %>
+
+ユーザID：<%= @owner.id %>
+ユーザEmail：<%= @owner.email %>
+ユーザ名：<%= @owner.username %>
+エラーコード：<%= @payout.failure_code %>
+エラーメッセージ：<%= @payout.failure_message %>
+失敗日時：<%= I18n.l(@payout.failed_at, format: :long) %>
+Stripe Account ID：<%= @owner.stripe_account_id %>
+Stripe Payout ID：<%= @payout.stripe_payout_id %>

@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostNew should matches to the snapshot 1`] = `
+<Fragment>
+  <EmotionCssPropInternal
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+    className="flex"
+    css={
+      Object {
+        "map": undefined,
+        "name": "kj747y",
+        "next": undefined,
+        "styles": "
+          min-height: calc(var(--inner-height) - 52px);
+        ",
+        "toString": [Function],
+      }
+    }
+  >
+    <Component>
+      <div
+        className="w-64 bg-neutral-200 border-r border-neutral-300"
+      >
+        <ul
+          className="py-4"
+        >
+          <li
+            className="
+          relative flex justify-between items-center px-5 py-3 text-sm cursor-pointer
+          text-primary
+        "
+            key="info"
+            onClick={[Function]}
+          >
+            <span
+              className="flex items-center"
+            >
+              <span
+                className="
+            flex items-center justify-center w-5 h-5 text-lg
+            text-primary
+          "
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        512,
+                        512,
+                        Array [],
+                        "f0ca",
+                        "M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z",
+                      ],
+                      "iconName": "list-ul",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                />
+              </span>
+              <span
+                className="inline-block ml-3 font-bold"
+              >
+                Basic info
+              </span>
+            </span>
+            <span
+              className="text-neutral-600 text-xs"
+            >
+              please input
+            </span>
+            <span
+              className="absolute inset-y-0 right-0 m-auto block w-1 h-8 bg-primary rounded-l-sm"
+            />
+          </li>
+          <li
+            className="
+          relative flex justify-between items-center px-5 py-3 text-sm cursor-pointer
+          false
+        "
+            key="address"
+            onClick={[Function]}
+          >
+            <span
+              className="flex items-center"
+            >
+              <span
+                className="
+            flex items-center justify-center w-5 h-5 text-lg
+            text-neutral-600
+          "
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        384,
+                        512,
+                        Array [],
+                        "f3c5",
+                        "M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z",
+                      ],
+                      "iconName": "map-marker-alt",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                />
+              </span>
+              <span
+                className="inline-block ml-3 font-bold"
+              >
+                Address
+              </span>
+            </span>
+            <span
+              className="text-neutral-600 text-xs"
+            >
+              please input
+            </span>
+          </li>
+          <li
+            className="
+          relative flex justify-between items-center px-5 py-3 text-sm cursor-pointer
+          false
+        "
+            key="images"
+            onClick={[Function]}
+          >
+            <span
+              className="flex items-center"
+            >
+              <span
+                className="
+            flex items-center justify-center w-5 h-5 text-lg
+            text-neutral-600
+          "
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        512,
+                        512,
+                        Array [],
+                        "f03e",
+                        "M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z",
+                      ],
+                      "iconName": "image",
+                      "prefix": "far",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                />
+              </span>
+              <span
+                className="inline-block ml-3 font-bold"
+              >
+                Photo
+              </span>
+            </span>
+          </li>
+          <li
+            className="
+          relative flex justify-between items-center px-5 py-3 text-sm cursor-pointer
+          false
+        "
+            key="calendar"
+            onClick={[Function]}
+          >
+            <span
+              className="flex items-center"
+            >
+              <span
+                className="
+            flex items-center justify-center w-5 h-5 text-lg
+            text-neutral-600
+          "
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        448,
+                        512,
+                        Array [],
+                        "f073",
+                        "M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z",
+                      ],
+                      "iconName": "calendar-alt",
+                      "prefix": "far",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                />
+              </span>
+              <span
+                className="inline-block ml-3 font-bold"
+              >
+                Calendar
+              </span>
+            </span>
+          </li>
+        </ul>
+        <div
+          className="px-6"
+        >
+          <span
+            className="inline-block ml-3 font-bold text-sm"
+          >
+            公開ステータス: 
+            Published
+          </span>
+          <Button
+            disabled={true}
+            full={true}
+            handleClick={[Function]}
+            size="small"
+            type="button"
+          >
+            Change status
+          </Button>
+        </div>
+      </div>
+    </Component>
+    <div
+      className="flex-auto p-4 overflow-auto bg-texture"
+    >
+      <Panel
+        className="false"
+        title="Input basic info"
+      >
+        <BasicInfo
+          categories={Array []}
+          conditions={Array []}
+          handleFormSubmit={[Function]}
+          isNew={true}
+          post={
+            Object {
+              "aasm_state": "published",
+              "aasm_state_i18n": "Published",
+              "avarage_review_score": 0,
+              "category": Object {
+                "id": 1,
+                "name": "Category 1",
+                "position": 10,
+              },
+              "category_id": 1,
+              "city": "横浜",
+              "created_at": "2019年10月02日 16時15分55秒",
+              "description": "2ようこそ東京へ！↵↵  利便性の高い立地で､押上駅から徒歩6分｡スカイツリーからも徒歩6分です｡成田空港､羽田空港から直通です。コンビニやスーパーなど周辺施設も充実しています。↵  ビジネス旅行にも､ご友人での旅行にも大変おすすめです!",
+              "full_address": "桜木町 横浜  ",
+              "id": 2,
+              "latitude": 35.454954,
+              "longitude": 139.631386,
+              "name": "一軒家の12畳和室  代々木､代々木公園駅より徒歩8分",
+              "note": "Please contact us if there are mistakes in the number of people. If you stay over the number of people you want, you will be charged a fee and a penalty.↵宿泊人数に間違いがある場合はご連絡ください｡意図して予約した人数より多く宿泊した場合は追加料金と違約金を請求します｡↵↵･午後10時以降は騒音禁止↵Noise prohibition after 10 pm.↵↵･他に住人がいるため廊下･階段での会話禁止↵There are people living in other rooms. Prohibition of talk in hallways and stairs.",
+              "post_images": Array [
+                Object {
+                  "created_at": "2019年10月02日 16時15分55秒",
+                  "description": null,
+                  "id": 2,
+                  "image_attached": true,
+                  "image_url": "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c450acd2c0186bce6691627f6004fa023e10eb30/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9LYzNSeWFYQlUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--5847c13c036c253fd69dd274f96f1e9b8bde9b4d/apartment-2094666.jpg",
+                  "position": 1,
+                  "updated_at": "2019年10月02日 16時15分55秒",
+                },
+              ],
+              "price": "2,000",
+              "price_numeric": 2000,
+              "public_address": "桜木町 横浜",
+              "published": false,
+              "published_at": null,
+              "reviews": Array [],
+              "slug": "d154d2082190345f",
+              "state": "桜木町",
+              "street1": null,
+              "street2": null,
+              "tags": Array [],
+              "updated_at": "2019年10月02日 16時15分55秒",
+              "user": Object {
+                "avatar_attached": true,
+                "avatar_url": "",
+                "bio": "bio",
+                "created_at": "2019年10月21日 18時14分58秒",
+                "email": "test@example.com",
+                "email_notification": false,
+                "fullname": "User",
+                "id": 1,
+                "identification_workflow_state": null,
+                "posts_count": 0,
+                "reviews_count": 0,
+                "roles": Array [
+                  Object {
+                    "id": 1,
+                    "name": "admin",
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "host",
+                  },
+                  Object {
+                    "id": 3,
+                    "name": "guest",
+                  },
+                ],
+                "social_profiles": Array [],
+                "stripe_customer_id": null,
+                "unread_notifications_count": 0,
+                "updated_at": "",
+                "username": "User",
+              },
+              "user_liked": true,
+              "viewed_count": 5,
+              "zipcode": null,
+            }
+          }
+          setIsNew={[Function]}
+          tags={Array []}
+        />
+      </Panel>
+    </div>
+  </EmotionCssPropInternal>
+</Fragment>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/Score.tsx should matches to the snapshot 1`] = `
+<div>
+  <div
+    className="flex items-center"
+  >
+    <ReviewStars
+      gapMarginClassName="mx-2px"
+      iconHeight={12}
+      iconWidth={13}
+      score={3.6}
+    />
+    <span
+      className="leading-none text-sm ml-1 ml-1"
+    >
+      <span
+        className="font-bold"
+      >
+        3.6
+      </span>
+    </span>
+  </div>
+</div>
+`;

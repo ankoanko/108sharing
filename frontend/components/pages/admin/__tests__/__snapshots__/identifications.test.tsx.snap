@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminIdentificationIndex should matches to the snapshot 1`] = `
+<AdminLayout
+  model="identification"
+  title="Identification"
+>
+  <EditTable
+    columns={
+      Array [
+        Object {
+          "field": [Function],
+          "name": "User",
+        },
+        Object {
+          "field": [Function],
+          "name": "Image",
+        },
+        Object {
+          "field": [Function],
+          "name": "Status",
+        },
+        Object {
+          "field": [Function],
+          "name": "Action",
+        },
+      ]
+    }
+    editable={false}
+    records={
+      Array [
+        Object {
+          "description": null,
+          "id": 1,
+          "identification_images": Array [
+            Object {
+              "id": 1,
+              "image_url": "/url/1",
+            },
+          ],
+          "user": Object {
+            "bio": "はじめまして。太郎と申します。都内に住んでおりますので、何かございましたらいつでもご連絡ください。すぐに対応いたします。",
+            "email": "user@example.com",
+            "email_notification": true,
+            "id": 2,
+            "posts_count": 3,
+            "unread_notifications_count": 2,
+            "username": "Taro",
+          },
+          "workflow_state": "requested",
+        },
+        Object {
+          "description": null,
+          "id": 2,
+          "identification_images": Array [
+            Object {
+              "id": 2,
+              "image_url": "/url/2",
+            },
+            Object {
+              "id": 3,
+              "image_url": "/url/3",
+            },
+          ],
+          "user": Object {
+            "bio": "はじめまして。花子です。",
+            "email": "user@example.com",
+            "email_notification": true,
+            "id": 3,
+            "posts_count": 4,
+            "unread_notifications_count": 2,
+            "username": "Hanako",
+          },
+          "workflow_state": "requested",
+        },
+      ]
+    }
+  />
+</AdminLayout>
+`;

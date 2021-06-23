@@ -1,0 +1,13 @@
+<% set_meta_tags title: I18n.t("meta.post.edit", { post_name: @post.name }) %>
+<% set_meta_tags og: { title: I18n.t("meta.post.edit", { post_name: @post.name }) } %>
+
+<%= react_component("pages/posts/new",
+  {
+    post: @post_json,
+    categories: @categories,
+    tags: @tags,
+    conditions: @conditions,
+    isNew: false
+  },
+  prerender: false) %>
+

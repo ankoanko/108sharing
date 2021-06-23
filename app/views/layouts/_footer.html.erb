@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="has-text-centered">
+    <ul class="menu-list l-footer__list">
+      <li>
+        <%= link_to t('pages.footer.nav.contact'), new_contact_path, target: "_blank" %>
+      </li>
+      <li>
+        <%= link_to t('pages.footer.nav.terms_of_user'), terms_of_use_path, target: "_blank" %>
+      </li>
+      <li>
+        <%= link_to t('pages.footer.nav.policy'), policy_path, target: "_blank" %>
+      </li>
+    </ul>
+    <div class="has-text-centered">
+      <div class="u-margin--t30 u-margin--b50">
+        <% link_to "#modal-lang", class: "button" do %>
+          <span class="icon">
+            <i class="fas fa-globe"></i>
+          </span>
+          <span class="u-margin--l5">日本語</span>
+        <% end %>
+      </div>
+      <div><%= t('pages.footer.copyright') %></div>
+    </div>    
+  </div>
+</footer>

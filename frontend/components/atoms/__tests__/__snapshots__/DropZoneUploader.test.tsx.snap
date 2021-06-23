@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/filters/DropZoneUploader.tsx should matches to the snapshot 1`] = `
+<div
+  className="flex items-center justify-center p-2 border-dashed border-2 rounded-lg text-sm font-bold cursor-pointer text-center transition duration-150 focus:border-primary focus:outline-none file-drop-input border-neutral-300 text-neutral-600"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragEnter={[Function]}
+  onDragLeave={[Function]}
+  onDragOver={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  tabIndex={0}
+>
+  <input
+    accept="image/*"
+    autoComplete="off"
+    multiple={true}
+    onChange={[Function]}
+    onClick={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    tabIndex={-1}
+    type="file"
+  />
+  <p
+    className="file-drop-input-text"
+  >
+    Drag 'n' drop some files here, or click to select files
+  </p>
+</div>
+`;

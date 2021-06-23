@@ -1,0 +1,125 @@
+name: CD
+
+on:
+  push:
+    branches:
+      # - release/development
+      - release/staging
+      # - release/production
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v1
+    - name: Print GitHub Context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+
+    - name: Set variables
+      run:
+        sh deploy/setenv.sh
+
+    - name: Build
+      run:
+        docker build -f Dockerfile.production --build-arg SECRET_KEY_BASE=abcd1234abcd1234 -t app .
+
+    - name: Set Docker Repository name from Github Package Resistry
+      if: ${{ env.USE_GITHUB_PACKAGE_REGISTRY }}
+      run: |
+        REPO=${{ github.repository }}; GITHUB_REPOSITORY=${REPO,,};
+        echo "::set-env name=GITHUB_REPOSITORY::"${GITHUB_REPOSITORY}
+        export DOCKER_REGISTRY=docker.pkg.github.com/${GITHUB_REPOSITORY}/${{ github.event.repository.name }}-${{ env.SHORT_ENV_NAME }}
+        export GITHUB_SHA_SHORT=$(echo ${{ github.sha }} | cut -c 1-6)
+        echo "::set-env name=DOCKER_REGISTRY::"${DOCKER_REGISTRY}
+        echo "::set-env name=GITHUB_SHA_SHORT::"${GITHUB_SHA_SHORT}
+        echo "::set-env name=CURRENT_DOCKER_IMAGE::"${DOCKER_REGISTRY}:${GITHUB_SHA_SHORT}
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.DEPLOYER_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.DEPLOYER_AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Login to Github Package Registry
+      if: ${{ env.USE_GITHUB_PACKAGE_REGISTRY }}
+      env:
+        GITHUB_USERNAME: x-access-token
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run:
+        docker login docker.pkg.github.com --username ${GITHUB_USERNAME} --password ${GITHUB_TOKEN} && sleep 3
+
+    - name: Login to Amazon ECR
+      if: ${{ env.ECR_REPOSITORY }}
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Set Docker Repository name from Amazon ECR
+      if: ${{ env.ECR_REPOSITORY }}
+      run: |
+        export DOCKER_REGISTRY=${{ steps.login-ecr.outputs.registry }}/${ECR_REPOSITORY}
+        export GITHUB_SHA_SHORT=$(echo ${{ github.sha }} | cut -c 1-6)
+        echo "::set-env name=DOCKER_REGISTRY::"${DOCKER_REGISTRY}
+        echo "::set-env name=GITHUB_SHA_SHORT::"${GITHUB_SHA_SHORT}
+        echo "::set-env name=CURRENT_DOCKER_IMAGE::"${DOCKER_REGISTRY}:${GITHUB_SHA_SHORT}
+
+    - name: Deploy to Docker Registry
+      run: |
+        docker tag app ${{ env.CURRENT_DOCKER_IMAGE }}
+        docker push ${{ env.CURRENT_DOCKER_IMAGE }}
+
+    - name: Create task-definition.json
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOYER_AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOYER_AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
+      run:
+        aws ecs describe-task-definition --task-definition ${{ env.ECS_TASK_NAME }} --query "taskDefinition.{containerDefinitions:containerDefinitions,family:family,taskRoleArn:taskRoleArn,executionRoleArn:executionRoleArn,networkMode:networkMode,volumes:volumes,placementConstraints:placementConstraints,requiresCompatibilities:requiresCompatibilities,cpu:cpu,memory:memory}" > deploy/task-definition.json
+
+    - name: Render Amazon ECS task definition (web)
+      id: render-web-container
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: deploy/task-definition.json
+        container-name: web
+        image: ${{ env.CURRENT_DOCKER_IMAGE }}
+
+    - name: Render Amazon ECS task definition (worker)
+      id: render-worker-container
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: ${{ steps.render-web-container.outputs.task-definition }}
+        container-name: worker
+        image: ${{ env.CURRENT_DOCKER_IMAGE }}
+
+    - name: Render Amazon ECS task definition (update)
+      id: render-update-container
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: ${{ steps.render-worker-container.outputs.task-definition }}
+        container-name: update
+        image: ${{ env.CURRENT_DOCKER_IMAGE }}
+
+    - name: Deploy to Amazon ECS service
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+      with:
+        task-definition: ${{ steps.render-update-container.outputs.task-definition }}
+        service: ${{ env.ECS_SERVICE_NAME }}
+        cluster: ${{ env.ECS_CLUSTER_NAME }}
+
+    - name: Slack Notification
+      uses: homoluctus/slatify@master
+      if: always()
+      with:
+        type: ${{ job.status }}
+        job_name: 'Deploy'
+        mention: 'here'
+        mention_if: 'failure'
+        url: ${{ secrets.SLACK_WEBHOOK }}
+        commit: true
+        token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        SLACK_WEBHOOK: ${{ secrets.DEPLOYER_SLACK_WEBHOOK }}

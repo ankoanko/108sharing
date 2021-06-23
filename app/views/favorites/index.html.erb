@@ -1,0 +1,7 @@
+<%= react_component("pages/posts/search",
+  {
+    isSignedIn: user_signed_in?,
+    posts: @posts_json,
+    favorite: true
+  },
+  prerender: false) %>

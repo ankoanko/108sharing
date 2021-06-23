@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactsNew should matches to the snapshot 1`] = `
+<div
+  className="pt-6 pb-10 px-4 bg-texture"
+>
+  <Panel
+    title="Contact"
+  >
+    <ForwardRef
+      fields={
+        Object {
+          "body": "body",
+          "email": "email",
+          "name": "name",
+          "subject": "subject",
+        }
+      }
+      handleSubmit={[Function]}
+      handleUpdateForm={[Function]}
+    >
+      <div>
+        <div
+          className="mt-6 first:mt-0"
+        >
+          <InputText
+            defaultValue="taro"
+            label="Name"
+            name="name"
+            required={true}
+          />
+        </div>
+        <div
+          className="mt-6 first:mt-0"
+        >
+          <InputText
+            defaultValue=""
+            label="Email"
+            name="email"
+            required={true}
+          />
+        </div>
+        <div
+          className="mt-6 first:mt-0"
+        >
+          <InputText
+            defaultValue=""
+            label="Subject"
+            name="subject"
+            required={true}
+          />
+        </div>
+        <div
+          className="mt-6 first:mt-0"
+        >
+          <ForwardRef
+            defaultValue=""
+            label="Message"
+            name="body"
+            required={true}
+          />
+        </div>
+        <div
+          className="flex justify-center mt-10"
+        >
+          <Button
+            disabled={true}
+          >
+            Next
+          </Button>
+        </div>
+      </div>
+    </ForwardRef>
+  </Panel>
+</div>
+`;

@@ -1,0 +1,22 @@
+<% set_meta_tags title: Setting.default_site, site: nil %>
+<% set_meta_tags og: { title: Setting.default_site }, site: nil %>
+
+<%= react_component("organisms/Header",
+    {
+        isSignedIn: user_signed_in?,
+        user: UserSerializer.serialize(current_user),
+        lang: {
+          en_path: url_for(params.permit().merge(locale: :en)),
+          ja_path: url_for(params.permit().merge(locale: :ja)),
+        },
+        shrink: true,
+    },
+    prerender: false) %>
+
+<main>
+  <%= react_component("pages/top", {
+      categories: @categories_json,
+  }, prerender: false) %>
+</main>
+
+<%= react_component 'organisms/Footer', { messages: flash_messages, expanded: true } %>

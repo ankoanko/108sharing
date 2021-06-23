@@ -1,0 +1,35 @@
+<%= form_with(model: contact, local: true) do |form| %>
+  <div class="field"> <label class="label">
+    <%= t('contact.form.subject.label') %>
+  </label>
+    <div class="control">
+      <%= form.text_field :subject, class: "input", placeholder: t('contact.form.subject.placeholder') %>
+    </div>
+  </div>
+  <div class="field"> <label class="label">
+    <%= t('contact.form.name.label') %>
+  </label>
+    <div class="control">
+      <%= form.text_field :name, class: "input", placeholder: t('contact.form.name.placeholder') %>
+    </div>
+  </div>
+  <div class="field"> <label class="label">
+    <%= t('contact.form.email.label') %>
+  </label>
+    <div class="control">
+      <%= form.email_field :email, class: "input", placeholder: t('contact.form.email.placeholder') %>
+    </div>
+  </div>
+  <div class="field"> <label class="label">
+    <%= t('contact.form.body.label') %>
+  </label>
+    <div class="control">
+      <%= form.text_area :body, class: "textarea", placeholder: "", rows: "10", placeholder: t('contact.form.body.placeholder') %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <%= form.submit t('contact.form.submit'), class: "button is-primary is-large" %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.post") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.post") } %>
+
+<%= react_component("pages/admin/posts/index",
+  { posts: @posts_json },
+  prerender: false) %>

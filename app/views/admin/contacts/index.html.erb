@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.contact") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.contact") } %>
+
+<%= react_component("pages/admin/contacts/index",
+  { contacts: @contacts_json },
+  prerender: false) %>

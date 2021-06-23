@@ -1,0 +1,10 @@
+<%= react_component("pages/reservations/show",
+  {
+    user: @user_json,
+    other_user: @other_user_json,
+    conversation: @conversation,
+    reservation: @reservation_json,
+    messages: @messages_json,
+    receipt_id: @receipt_id
+  },
+  prerender: false) %>

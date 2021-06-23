@@ -1,0 +1,23 @@
+<% set_meta_tags title: @post.name %>
+<% set_meta_tags description: @post.description %>
+<% set_meta_tags og: { title: @post.name } %>
+<% set_meta_tags og: { description: @post.description } %>
+
+<% content_for :stripe_head_tag do %>
+  <%= tag :meta, name: "stripe-public-key", content: ENV["STRIPE_PUBLISHABLE_KEY"] %>
+  <script src="https://js.stripe.com/v3/"></script>
+<% end %>
+
+<%= react_component("pages/posts/show",
+  {
+    user: user_signed_in? ? UserSerializer.new(current_user).serializable_hash[:data][:attributes] : nil,
+    isSignedIn: user_signed_in?,
+    post: @post_json,
+    post_owner: @post.user,
+    editable: policy(@post).edit?,
+    isOwner: current_user&.id == @post.user_id,
+    identification_required: !Setting.skip_identification && !current_user.try('identification_exist?'),
+    profile_required: !Setting.skip_profile && !current_user.try('profile_exist?')
+  },
+  prerender: false) %>
+

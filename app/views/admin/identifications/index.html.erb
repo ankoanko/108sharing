@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.identification") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.identification") } %>
+
+<%= react_component("pages/admin/identifications/index",
+  { identifications: @identifications_json },
+  prerender: false) %>

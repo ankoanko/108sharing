@@ -1,0 +1,37 @@
+test:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+
+local:
+  service: Disk
+  root: <%= Rails.root.join("storage") %>
+
+amazon:
+  service: S3
+  access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
+  secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+  region: <%= ENV['AWS_REGION'] %>
+  bucket: <%= ENV['AWS_S3_BUCKET'] %>
+
+google:
+  service: GCS
+  project: xxxxxxxxx
+  bucket: xxxxxxx
+  credentials: {
+    type: "service_account",
+    project_id: <%= Rails.application.credentials.dig(:google, :project_id) %>,
+    private_key_id: <%= Rails.application.credentials.dig(:google, :private_key_id) %>,
+    private_key: <%= Rails.application.credentials.dig(:google, :private_key)&.dump %>,
+    client_email: <%= Rails.application.credentials.dig(:google, :client_email) %>,
+    client_id: <%= Rails.application.credentials.dig(:google, :client_id) %>,
+    auth_uri: "https://accounts.google.com/o/oauth2/auth",
+    token_uri: "https://oauth2.googleapis.com/token",
+    auth_provider_x509_cert_url: "<%= Rails.application.credentials.dig(:google, :auth_provider_x509_cert_url) %>",
+    client_x509_cert_url: "<%= Rails.application.credentials.dig(:google, :client_x509_cert_url) %>"
+  }
+
+googledev:
+  service: GCS
+  project: <%= ENV['GCP_PROJECT'] %>
+  bucket: <%= ENV['GCS_BUCKET'] %>
+  credentials: <%= Rails.root.join("secrets/google-sa-credentials.json") %>

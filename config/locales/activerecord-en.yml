@@ -1,0 +1,144 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Validation failed: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Cannot delete record because a dependent %{record} exists"
+          has_many: "Cannot delete record because dependent %{record} exist"
+        user_not_authorized: You are not authorized to perform this action
+        reserved: "is already in use"
+        bank:
+          not_register_bank_account: Please regist your bank account
+          not_accepted: Please update your bank account information
+        identification:
+          not_register: Please regist identification
+          validating: your identification is validating. Please wait few days
+          declined: Please update your identification
+        balance:
+          insufficient: not enough balance
+      models:
+        post:
+          invalid_price_value:  must be 0 or greater than 50
+        reservation:
+          identification_required: Identification required
+        user:
+          profile_required: Profile required
+          avater:
+            size_over: resize less than 100MB
+            invalid_format: format is invalid. enabled format is png, jpg and jpeg
+          email:
+            invalid: invalid format
+
+    attributes:
+      address:
+        postal_code: Postal Code
+        state: State
+        city: City
+        town: Town
+        other: Other
+        state_kana: State(Kana)
+        city_kana: City(Kana)
+        town_kana: Town(Kana)
+        other_kana: Other(Kana)
+      announcement:
+        title: Announcement
+        url: URL
+      bank_account:
+        bank_name: Bank Name
+        branch_name: Branch Name
+        number: Account Number
+        name: Account Name
+        account_type: Account Type
+        bank_code: Bank Code
+        branch_code: Branch Code
+      category:
+        name: Name
+        position: Position
+      post:
+        price: Price
+      reservation:
+        id: ID
+        user_id: User ID
+        post_id: Post ID
+        start_date: Start Date
+        end_date: End Date
+        workflow_state: Status
+        price: Price
+        paid_at: Paid At
+        canceled_at: Canceled At
+        stripe_charge_id: Stripe Charge ID
+        stripe_refund_id: Stripe Refund ID
+        created_at: Created At
+        updated_at: Updated At
+        refund_amount: Refund Amount
+        authorized_at: Authorized At
+        slug: Slug
+        no: Reservation No
+      tag:
+        name: Name
+        position: Position
+      user:
+        confirmation_sent_at: Confirmation sent at
+        confirmation_token: Confirmation token
+        confirmed_at: Confirmed at
+        created_at: Created at
+        current_password: Current password
+        current_sign_in_at: Current sign in at
+        current_sign_in_ip: Current sign in IP
+        email: Email
+        encrypted_password: Encrypted password
+        failed_attempts: Failed attempts
+        last_sign_in_at: Last sign in at
+        last_sign_in_ip: Last sign in IP
+        locked_at: Locked at
+        password: Password
+        password_confirmation: Password confirmation
+        profile: Profile
+        remember_created_at: Remember created at
+        remember_me: Remember me
+        reset_password_sent_at: Reset password sent at
+        reset_password_token: Reset password token
+        sign_in_count: Sign in count
+        unconfirmed_email: Unconfirmed email
+        unlock_token: Unlock token
+        updated_at: Updated at
+        username: User name
+        phone: Phone number
+        last_name: Last Name
+        first_name: First Name
+        last_name_kana: Last Name(Kana)
+        first_name_kana: First Name(Kana)
+    models:
+      address: Address
+      announcement: Announcement
+      bank_account: Bank Account
+      calendar: Calendar
+      card: Card
+      category: Category
+      contact: Contact
+      identification_image: Identification Image
+      identification: Identification
+      message: Message
+      notification: Notification
+      post: Post
+      post_image: Post Image
+      receipt: Receipt
+      reservation: Reservation
+      review: Review
+      setting: Setting
+      social_profile: SNS
+      tag: Tag
+      user: User
+  activemodel:
+    attributes:
+      form/create_identity_verification:
+        address: Address
+        identification_image: Identification Image
+        last_name: Last Name
+        first_name: First Name
+        last_name_kana: Last Name(Kana)
+        first_name_kana: First Name(Kana)
+        phone: Phone
+        birthday: Birthday
+        gender: Gender

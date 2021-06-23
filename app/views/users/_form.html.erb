@@ -1,0 +1,18 @@
+<%= form_for user, url: user_path, method: :put do |f| %>
+  <% if user.errors.any? %>
+  TODO
+  <% end %>
+
+  <%= label_tag :username %>
+  <%= f.text_field :username %>
+
+  <% if false %>
+    <%= label_tag :email, "Email address" %>
+    <%= f.text_field :email %>
+
+    <%= label_tag :password, "Change password" %>
+    <%= f.text_field :password %>
+  <% end %>
+
+  <%= f.submit "Save" %>
+<% end %>

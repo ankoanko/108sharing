@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-react-hooks",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "jsx-no-lambda": false,
+    "object-literal-sort-keys": false,
+    "no-unused-expression": [true, "allow-new"],
+    "react-hooks-nesting": "error",
+    "variable-name": false
+  }
+}

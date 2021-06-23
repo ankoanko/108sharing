@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/Panel.tsx should matches to the snapshot 1`] = `
+<div
+  className="m-auto px-6 py-10 rounded-xlg shadow-colored-lg bg-white max-w-4xl"
+>
+  <div
+    className="m-auto max-w-2xl"
+  >
+    <h1
+      className="mb-8 text-xl font-bold"
+    >
+      Title
+    </h1>
+    <div />
+  </div>
+</div>
+`;

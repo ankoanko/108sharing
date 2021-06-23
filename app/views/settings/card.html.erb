@@ -1,0 +1,12 @@
+<% content_for :stripe_head_tag do %>
+  <%= tag :meta, name: "stripe-public-key", content: ENV["STRIPE_PUBLISHABLE_KEY"] %>
+  <script src="https://js.stripe.com/v3/"></script>
+<% end %>
+
+<%= react_component("pages/settings/card",
+  {
+    isNew: @card.nil? ? true : false,
+    card: @card,
+    user: UserSerializer.serialize(current_user),
+  },
+  prerender: false) %>

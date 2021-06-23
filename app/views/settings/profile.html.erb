@@ -1,0 +1,7 @@
+<%= react_component("pages/settings/profile",
+  {
+    isSignedIn: user_signed_in?,
+    user: @account_json,
+    profileRequired: !Setting.skip_profile
+  },
+  prerender: false) %>

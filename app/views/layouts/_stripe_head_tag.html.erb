@@ -1,0 +1,4 @@
+<% content_for :stripe_head_tag do %>
+  <%= tag :meta, name: "stripe-public-key", content: Settings.stripe.publishable_key %>
+  <script src="https://js.stripe.com/v3/"></script>
+<% end %>

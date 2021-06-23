@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostShow should matches to the snapshot 1`] = `
+<PostDetail
+  changePage={[Function]}
+  editable={false}
+  identification_required={false}
+  isOwner={false}
+  isSignedIn={false}
+  page="show"
+  post={
+    Object {
+      "aasm_state_i18n": "公開",
+      "avarage_review_score": 4,
+      "capacity": null,
+      "category": Object {
+        "id": 1,
+        "name": "Apartment",
+        "position": 10,
+      },
+      "city": "東京",
+      "created_at": "2020年10月05日 20時04分37秒",
+      "description": "ようこそ東京へ！
+  利便性の高い立地で､押上駅から徒歩6分｡スカイツリーからも徒歩6分です｡成田空港､羽田空港から直通です。コンビニやスーパーなど周辺施設も充実しています。
+  ビジネス旅行にも､ご友人での旅行にも大変おすすめです!",
+      "full_address": "墨田区 東京  ",
+      "functionality": null,
+      "id": 101,
+      "latitude": 35.658581,
+      "longitude": 139.745433,
+      "name": "駅･スカイツリーから徒歩6分！立地最高の無料Wi-FI付、最大3名収容物件！",
+      "note": "Please contact us if there are mistakes in the number of people. If you stay over the number of people you want, you will be charged a fee and a penalty.
+宿泊人数に間違いがある場合はご連絡ください｡意図して予約した人数より多く宿泊した場合は追加料金と違約金を請求します｡
+
+･午後10時以降は騒音禁止
+Noise prohibition after 10 pm.
+
+･他に住人がいるため廊下･階段での会話禁止
+There are people living in other rooms. Prohibition of talk in hallways and stairs.",
+      "post_images": Array [
+        Object {
+          "created_at": "2020年10月05日 20時04分37秒",
+          "description": null,
+          "id": 101,
+          "image_attached": true,
+          "image_url": "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBhdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e5fb451af544c14e35831fa9752bbb92a610ae9a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9LYzNSeWFYQlUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c1eb796b040bd3f4e700914a69aa117fbcdae195/apartment-2094666.jpg",
+          "position": 1,
+          "updated_at": "2020年10月05日 20時04分37秒",
+        },
+      ],
+      "price": "10,000",
+      "price_numeric": 10000,
+      "public_address": "墨田区 東京",
+      "published": true,
+      "published_at": "2020年10月05日 20時04分37秒",
+      "reviews": Array [
+        Object {
+          "body": "とてもきれいな部屋で快適でした",
+          "created_at": "2020/10/05",
+          "created_time_ago": "10日",
+          "id": 1,
+          "rating": 4,
+          "reservation": null,
+          "reviewable": null,
+          "reviewer": Object {
+            "avatar_url": "/images/no-avatar.svg",
+            "bio": "はじめまして。花子と申します。埼玉に住んでおります。リプは一時間以内を目指しています",
+            "birthday": null,
+            "card": null,
+            "created_at": "2020年10月",
+            "email": "guest@example.com",
+            "email_exists": true,
+            "email_notification": true,
+            "fullname": "sasada",
+            "gender": "female",
+            "gender_i18n": "Female",
+            "id": 3,
+            "identification_workflow_state": "approved",
+            "phone": null,
+            "posts_count": 0,
+            "published": true,
+            "reviews_count": 0,
+            "roles": Array [],
+            "suspended": false,
+            "unread_notifications_count": 0,
+            "username": "hanako",
+          },
+        },
+      ],
+      "size": null,
+      "slug": "849141268169c711",
+      "state": "墨田区",
+      "street1": null,
+      "street2": null,
+      "tags": Array [
+        Object {
+          "id": 1,
+          "name": "Entire place",
+          "position": 10,
+        },
+        Object {
+          "id": 4,
+          "name": "Self Check-in",
+          "position": 40,
+        },
+      ],
+      "updated_at": "2020年10月05日 20時04分37秒",
+      "user": Object {
+        "avatar_url": "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3914a20eb6b998df7ae7f3cac41e0b88fad787fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9LYzNSeWFYQlUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c1eb796b040bd3f4e700914a69aa117fbcdae195/face-1391628_1920.jpg",
+        "bio": "はじめまして。太郎と申します。都内に住んでおりますので、何かございましたらいつでもご連絡ください。すぐに対応いたします。",
+        "birthday": null,
+        "created_at": "2020年10月",
+        "email": null,
+        "email_exists": true,
+        "email_notification": true,
+        "fullname": "yamanaka taro",
+        "gender": "female",
+        "gender_i18n": "Female",
+        "id": 2,
+        "identification_workflow_state": "approved",
+        "phone": null,
+        "posts_count": 103,
+        "published": true,
+        "reviews_count": 2,
+        "roles": Array [],
+        "suspended": false,
+        "unread_notifications_count": 1,
+        "username": "taro",
+      },
+      "user_liked": true,
+      "viewed_count": 3,
+      "zipcode": null,
+    }
+  }
+  post_owner={
+    Object {
+      "avatar_attached": true,
+      "avatar_url": "",
+      "bio": "bio",
+      "created_at": "2019年10月21日 18時14分58秒",
+      "email": "test@example.com",
+      "email_notification": false,
+      "fullname": "User",
+      "id": 1,
+      "identification_workflow_state": null,
+      "posts_count": 0,
+      "reviews_count": 0,
+      "roles": Array [
+        Object {
+          "id": 1,
+          "name": "admin",
+        },
+        Object {
+          "id": 2,
+          "name": "host",
+        },
+        Object {
+          "id": 3,
+          "name": "guest",
+        },
+      ],
+      "social_profiles": Array [],
+      "stripe_customer_id": null,
+      "unread_notifications_count": 0,
+      "updated_at": "",
+      "username": "User",
+    }
+  }
+  profile_required={false}
+  toggleLike={[Function]}
+  user={
+    Object {
+      "avatar_attached": true,
+      "avatar_url": "",
+      "bio": "bio",
+      "created_at": "2019年10月21日 18時14分58秒",
+      "email": "test@example.com",
+      "email_notification": false,
+      "fullname": "User",
+      "id": 1,
+      "identification_workflow_state": null,
+      "posts_count": 0,
+      "reviews_count": 0,
+      "roles": Array [
+        Object {
+          "id": 1,
+          "name": "admin",
+        },
+        Object {
+          "id": 2,
+          "name": "host",
+        },
+        Object {
+          "id": 3,
+          "name": "guest",
+        },
+      ],
+      "social_profiles": Array [],
+      "stripe_customer_id": null,
+      "unread_notifications_count": 0,
+      "updated_at": "",
+      "username": "User",
+    }
+  }
+/>
+`;

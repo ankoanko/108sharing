@@ -1,0 +1,18 @@
+defaults:
+  site_title: SharingEconomyScript
+mailer:
+  from:
+    default: "support@example.com"
+static_page:
+  terms_of_use: 'https://bulbcorp.jp/'
+  privacy: 'https://bulbcorp.jp/'
+stripe:
+  publishable_key:
+  secret_key:
+omniauth:
+  twitter:
+    api_key: ENV['TWITTER_API_KEY']
+    secret_key: ENV['TWITTER_API_SECRET_KEY']
+  facebook:
+    api_key:
+    secret_key:

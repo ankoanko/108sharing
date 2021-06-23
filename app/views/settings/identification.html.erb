@@ -1,0 +1,4 @@
+<%= react_component("pages/settings/identification", {
+  identification: @identification_json,
+  user: UserSerializer.serialize(current_user)
+}, prerender: false) %>

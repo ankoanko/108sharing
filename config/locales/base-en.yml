@@ -1,0 +1,679 @@
+en:
+  #
+  # Generic
+  #
+  generic:
+    about_guest: About guest
+    about_host: About host
+    access: Access
+    accounts: Accounts
+    action: Action
+    address: Address
+    ancestry: Ancestry
+    announcement: Announcement
+    apply: Apply
+    approve: Approve
+    area: Area
+    back_to_index: Back to index
+    back: Back
+    bank_account: Bank Account Info
+    bio: Bio
+    calender: Calender
+    cancel: Cancel
+    capacity: Capacity
+    caption: Caption
+    card: Card
+    category: Category
+    change: Change
+    change_status: Change status
+    check_in: Check in
+    check_out: Check out
+    city: City
+    clear: Clear
+    close: Close
+    conditions: Conditions
+    confirm_payment_method: Please confirm your payment method
+    contact: Contact
+    create_new: Create new
+    create_new_account: Create new account
+    create: Create
+    created_at: Created at
+    connecting_accounts: Connecting accounts
+    date: Date
+    decline: Decline
+    delete: Delete
+    delete_image: Delete image
+    description: Description
+    download: Download
+    suspended: Suspended
+    edit: Edit
+    email: Email
+    enter_reply: Enter a reply
+    execution: Execution
+    expiration_date: Expiration date
+    filter: Filter
+    functionality: Functionality
+    guest: Guest
+    host: Host
+    id: Id
+    identification: Identification
+    image: Image
+    item: Post
+    keyword: Keyword
+    label_no: No
+    label_yes: Yes
+    login: Login
+    map: Map
+    message: Message
+    name: Name
+    next: Next
+    note: Note
+    notification: Notification
+    ok: OK
+    password: Password
+    pay: Pay
+    payment: Payment
+    payment_method: Payment Method
+    per_day: /Per day
+    period: Period
+    photo: Photo
+    position: Position
+    post: Post
+    prefectures: Prefectures
+    price: Price
+    profile: Profile
+    publication_date: Publication date
+    publish: Publish
+    published: Published
+    receipt: Receipt
+    registration: Registration
+    reply: Reply
+    required: Required
+    reservation: Reservation
+    review_count: "%{count} reviews"
+    response_from: "Response from %{user}"
+    role: Role
+    save: Save
+    select_image: Select image
+    select_file: Select file
+    send: Send
+    setting: Setting
+    show_detail: Show detail
+    signup: Signup
+    size: Size
+    status: Status
+    street1: Street1
+    street2: Street2
+    submit: Submit
+    tag: Tag
+    to_index: List
+    today: Today
+    total: Total
+    trimming: Trimming
+    unlink: Unlink
+    update: Update
+    updated_at: Updated at
+    url: URL
+    user: User
+    username: Username
+    value: Value
+    zipcode: Zipcode
+    time_ago: "%{time} ago"
+
+  button:
+    modify: Modify
+    send: Send
+    go_to_top: Go to Top
+    search: Search
+    pay: Pay
+    show_map: Show the map
+    reload: Reload
+
+  search_pan:
+    title: Go on a trip and do what you haven't experienced, with 108sharing
+    anywhere: Anywhere
+    search: Search
+    title_recommend: Recommended area
+    tokyo: Tokyo
+    osaka: Osaka
+    kyoto: Kyoto
+    select_area: Select area
+    sapporo: Sapporo
+    title_type: Search from room type
+
+  #
+  # Meta title
+  #
+
+  meta:
+    post:
+      index: Posts List
+      new: Create Post
+      edit: "Edit Post - %{post_name}"
+      search: Search Posts
+
+  #
+  # Domain
+  #
+
+  # post
+  post:
+    address_has_entered: Entered
+    basic_info: Basic info
+    cannot_reserve_own_post: Cannot reserve own post
+    create_post: Create post
+    favorite_post_heading: Favorite posts
+    image_has_uploaded: Image has uploaded
+    input_address: Input address
+    input_basic_info: Input basic info
+    it_is_your_post: It is your post
+    no_search_result: No search result
+    no_registered_post: No registered post
+    please_input_address: Please input
+    please_upload_image: Please upload
+    post_description: Post description
+    post_name: Post name
+    price_max: Max price
+    price_min: Min price
+    related_posts: Related posts
+    result_count_favorite: "%{count} results"
+    result_count_search: "%{count} results"
+    result_keyword: "Search results for \"%{keyword}\""
+    users_post_none: Users post none
+    users_post: Users post
+    view_post: View post
+
+    nav:
+      info:
+        label: Basic info
+        note: please input
+      address:
+        label: Address
+        note: please input
+      images:
+        label: Photo
+        note: Please upload one or more
+      calendar:
+        label: Calendar
+        note: please input
+
+  # favorite
+  favorite:
+    no_favorites: No favorites
+    is_liked: Added to Favorites
+    add_like: Add to Favorites
+
+  # reservation
+  reservation:
+    index: Reservations
+    about_reservation: About reservation
+    add_image: Add image
+    back_to_posts: Back to posts
+    send_message_to_host: Send message to the host
+    input_message: Input message
+    last_message: Last message
+    no_reservations: No reservations
+    price: Price
+    remarks_notes: Remarks and notes
+    reservation_completed: Reservation completed
+    reservation_date: Reservation date
+    reservation_detail: Reservation detail
+    show_passed_reservation: Show passed reservation
+    to_messages: To messages
+
+  # receipt
+  receipt:
+    receipt_address: Receipt address
+    create_receipt: Create receipt
+    note: ※ Please note that the receipt address on recipet can only be set once.
+
+
+  # cancel
+  cancel:
+    cancel_reservation_confirmation: "You will be charged ¥%{price} cancellation fee. Would it be alright？"
+    cancel_reservation_no_price: There is no cancellation fee.
+    cancel_reason: Cancel reason
+    cancel_reservation: Cancel reservation
+
+  # review
+  review:
+    review_count: "%{count} reviews"
+    write_review: Write review
+    add_review: Add review
+    completed: Review completed
+    back_to_index: Back to Index
+    rating: Rating
+    description: Description
+
+  # bank
+  bank_account_info:
+    bank_name: Bank name
+    branch_name: Branch name
+    number: Account nb
+    account_type: Type
+    name: Holder Name
+    bank_code: Bank code
+    branch_code: Branch code
+    placeholder:
+      bank_name: Mizuho
+      branch_name: Tokyo
+      number: "0000000"
+      account_type: Saving
+      name: John Doe
+      bank_code: "12"
+      branch_code: "123"
+
+  # card
+  card:
+    card_end: end
+    delete_card: Delete card
+    new_card: New card
+    register_card: Register card
+    registered_cards: Registered cards
+    note: Please note that we do not collect or store your credit card information.
+
+  # contact
+  contact:
+    name: Name
+    email: Email
+    subject: Subject
+    body: Message
+    confirmation: Confirm the following
+    completed: Completed
+    completed_message: "Your message has been sent.\nThe person in charge will contact you shortly."
+
+  # admin
+  admin:
+    create_new: "Create new %{model}"
+    edit: "Edit %{model}"
+    settings:
+      default_site: Website name
+      default_site_caption: (title tag | website name)
+      default_title: Default title tag
+      default_description: Default description tag
+      default_keywords: Default keywords tag
+      ga_tracking_id: Google Analytics Tracking ID
+      skip_profile: Allow to use the website without any profile registration
+      skip_identification: Allow to use the website without any identification approval
+
+  # settings
+  settings:
+    avatar_image: Profile image
+    change_email_address: Change email address
+    change_password: Change password
+    confirm_email: Confirm your email
+    confirmation_email_will_be_sent_to_this_email_address: Confirmation email will be sent to this email address
+    current_password: Current password
+    delete_provider: Delete provider
+    email_notification: Email notification
+    identification: Identification
+    identification_has_sent: Images has sent
+    new_email: New Email
+    new_password: New password
+    set_identification: Set identification
+    set_notification: Set notification
+    authenticated_items: Authenticated Items
+    authenticated: Authenticated
+    unauthenticated: Unauthenticated
+    set_profile: Set profile
+    set_identification_for_reservation: Set identification for reservation
+    set_profile_for_reservation: Set profile for reservation
+
+    # TODO
+    notification:
+      form:
+        email_notification:
+          label: Email notification
+
+  # conversation
+  conversation:
+    last_message: Last message
+
+  # notifications
+  notifications:
+    no_notifications: No notifications
+
+  # session
+  session:
+    forgot_password: Forgot password
+    have_account: Have account
+    invalid_mail_or_password: Invalid mail or password
+    suspended: This account has been suspended
+    confirm_email: Confirm your email
+    or: or
+    login_with: Login with
+    login_with_another_services: Login with other services
+
+  # password
+  password:
+    new_password: New Password
+    new_password_confirmation: New Password (Confirmation)
+
+  # mailer
+  mailer:
+    to: "To %{username}"
+    new_message_from: "New massage from %{site_name}"
+
+  #
+  # Component
+  #
+
+  # avatar
+  avatar:
+    avatar_created_at: "Joined in %{created_at}"
+    avatar_review: "%{count} Reviews"
+
+  # top_nav
+  top_nav:
+    admin: Admin
+    bank_account: Bank Account Info
+    contacts: Contacts
+    create_post: Create Post
+    favorites: Favorites
+    login: Login
+    logout: Logout
+    mypage: Mypage
+    posts: Posts List
+    reservations: "Reservations (%{name})"
+    settings: Settings
+    signup: Signup
+
+  # footer
+  footer:
+    intro: Do not reinvent the wheel building a sharing economy website from scratch, let's start a sharing economy business right now.
+    nav:
+      company: Company
+      blog: Blog
+      operating_company: About us
+      contact: Contact us
+      support: Support
+      privacy_policy: Privacy
+      term_of_use: Terms of Use
+      faq: FAQ
+
+  # dropzone
+  dropzone:
+    drop: Drop image
+    invalid_file: Invalid file type
+    select_or_drag_and_drop: Drag 'n' drop some files here, or click to select files
+    too_large: Too large size
+
+  # calendar
+  calendar:
+    available: Available
+    blocked: Blocked
+    cannot_edit_reserved_days: Cannot edit reserved days
+    selected_date: Selected date
+    state: State
+
+  # placeholder
+  placeholder:
+    post_price: e.g.) 100000
+    review_body: Please enter freely
+
+  #
+  # System
+  #
+
+  # errors
+  common_errors:
+    empty: Required input item
+    too_long: characters maximum. Please input using maximum characters or fewer.
+    system_error: A system error has occurred. Please reload the page.
+
+  # flash
+  flash:
+    model:
+      create:
+        success: "%{model} was successfully created!"
+        failure: "%{model} was failed to created."
+      update:
+        success: "%{model} was updated."
+        failure: "%{model} was failed to update."
+      delete:
+        success: "%{model} was deleted"
+        failure: "%{model} was failed to deleted"
+      approve:
+        success: "%{model} was approved"
+        failure: "%{model} was failed to approved"
+      decline:
+        success: "%{model} was declined"
+        failure: "%{model} was failed to declined"
+      cancel:
+        success: "%{model} was canceled"
+        failure: "%{model} was failed to canceled"
+    social_profile:
+      destroy:
+        success: "%{provider} connection was successfully removed"
+    email_blank: "Set email for receiving notification"
+
+  # mailer
+  contact_mailer:
+    notify:
+      subject: Contact
+      title: Content
+      body:
+        subject: Subject
+        name: Name
+        body: Content
+        email: email
+  message_mailer:
+    notify:
+      subject: "Received new message."
+      title: Please access the following URL.
+
+  # activity message
+  activity_message:
+    reservation:
+      created:
+        to_host: |-
+          %{user_name}さんが%{service_name}を購入しました。下記の１～３ステップを確認してください。
+
+          １、鑑定を提供する場合は、承諾ボタンを押してください。何らかの事情で鑑定の提供を辞退したい場合は<FAQ>をご確認ください。
+
+          ２、<ユーザ名>さんとメッセージをやりとりし、鑑定実施の日程、及び提供方法（LINE、Skype、Zoomなど）を決定してください。提供方法についてはこちらの<FAQ>をご確認ください。
+
+          ３、鑑定を実施し、最後に必ず鑑定終了を押してください。
+
+          ※承認、鑑定終了ボタンが押されないと売上として計上されません。
+        to_guest: "%{service_name}のご購入が完了しました。%{user_name}さんに挨拶のメッセージを送ってみましょう!"
+      approved:
+        to_host: "%{service_name}の鑑定を承諾しました。"
+        to_guest: |-
+          %{service_name}の鑑定が承諾されました。%{user_name}さんとメッセージをやりとりし、鑑定実施の日程、及び提供方法（LINE、Skype、Zoomなど）を決定してください。
+          提供方法についてはこちらの<FAQ>をご確認ください。
+      declined:
+        to_host: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+        to_guest: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+      canceled:
+        to_host: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+        to_guest: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+      finished:
+        to_host: |-
+          %{service_name}の鑑定が終了しました。
+          %{user_name}さんへのカルテを書きましょう。
+        to_guest: |-
+          %{service_name}の鑑定が終了しました。
+          レビューを書きましょう。
+    review:
+      created:
+        to_host: |-
+          Recieved the review from %{user_name}. Reply to reviews and increase engagement!
+          %{review_url}
+        to_guest: "Completed the review for %{service_name}."
+    result:
+      created:
+        to_host: "%{user_name}さんへのカルテの記載が完了しました。"
+        to_guest: |-
+          %{service_name}のカルテが届きました!早速内容を確認しましょう。
+          %{result_url}
+    review_reply:
+      created:
+        to_host: "Completed the review for %{user_name}."
+        to_guest: |-
+          Received a reply to the review for %{service_name}! Please check the contents immediately.
+          %{review_url}
+
+  # payment history
+  payment_history:
+    history: "Payment history"
+    day: "Day"
+    method: "Method"
+    price: "Price"
+    reservation:
+      created:
+        to_host: "%{service_name} ¥%{price} is purchased by %{user_name}."
+      declined:
+        to_host: "%{service_name} ¥%{price} purchased by %{user_name} has been cancelled."
+      cancelled:
+        to_host: "%{service_name} ¥%{price} purchased by %{user_name} has been cancelled."
+    payout:
+      created:
+        to_host: "Sales of ¥%{amount} transfer application completed."
+      failed:
+        to_host: "Sales of ¥%{amount} transfer failed."
+      paid:
+        to_host: "Sales of ¥%{amount} transfer completed."
+
+  # enums
+  enums:
+    bank_account:
+      account_type:
+        saving: Saving
+        checking: Checking
+    identification:
+      workflow_state:
+        requested: Requested
+        approved: Approved
+        declined: Declined
+      workflow_state_message:
+        requested: Checking your ID information. Please wait for a while.
+        approved: Identification has been confirmed
+        declined: Identification application has not been approved.
+    post:
+      aasm_state:
+        draft: Draft
+        published: Published
+        closed: Closed
+    reservation:
+      workflow_state:
+        requested: Requested
+        approved: Approved
+        declined: Declined
+        canceled: Canceled
+      applied:
+        message_subject: "%{postname}に購入申請しました。"
+        notification_body: "%{username}さんから [%{postname}]に購入希望が届いています。購入承認してください"
+      accepted:
+        message_subject: "[%{postname}]に購入承認しました"
+        notification_body: "%{username}さんから [%{postname}]が承認されました。支払いしてください。"
+      confirmed_payment:
+        message_subject: "[%{postname}]に支払い確認しました。"
+        notification_body: "%{username}さんが [%{postname}]の支払いを確認しました。商品を受け取ったら評価を登録してください。"
+      received:
+        message_subject: "[%{postname}]の受け取り確認しました。"
+        notification_body: "%{username}さんから [%{postname}]に受け取り確認されました。評価をお待ちください。"
+      requester_reviewed:
+        message_subject: "[%{postname}]さんの評価を登録しました。"
+        notification_body: "%{username}さんからの評価がつきました。評価を登録してください。"
+      requestee_reviewed:
+        message_subject: "[%{postname}]評価を登録しました。取引終了です。"
+        notification_body: "%{username}さんからの評価がつきました。取引終了です。"
+    violation_report:
+      spam: "Spam"
+      dating: "Dating"
+      nuisance: "Nuisance"
+      other: "Other"
+
+  # notification
+  notification:
+    contact:
+      created: "New contact has been created. [%{subject}]"
+    reservation:
+      approved: "Reservation has been approved"
+      created: "Reservation has been requested！"
+      declined: "Reservation has been declined"
+      canceled: "Reservation has been cancelled."
+    identification:
+      approved: "Identification has been approved."
+      requested: "Identification has been requested."
+      declined: "Identification has been declined."
+    message:
+      created: "received message from %{username}"
+    state:
+      applied:
+        message_subject: "Applied to purchase to %{postname}."
+        notification_body: "%{username} has sent a purchase request to [%{postname}]. Please approve the purchase."
+      received:
+        message_subject: "[%{postname}] Confirmed the receipt."
+        notification_body: "Recieved and confirmed by %{username} to [%{postname}].Please wait for the evaluation."
+      first_reviewed:
+        message_subject: "[%{postname}] Rating has been registered."
+        notification_body: "%{username} has registered your rating. Please register your rating."
+      accepted:
+        message_subject: "[%{postname}] Purchase approved."
+        notification_body: "%{username} has approved your purchase of [%{postname}]. Please make the payment."
+      confirmed_payment:
+        message_subject: "[%{postname}] Confirmed the payment."
+        notification_body: "%{username} confirmed the payment for [%{postname}]. Please register your rating when you receive the item."
+      second_reviewed:
+        message_subject: "[%{postname}] Rating has been registered. The transaction is closed."
+        notification_body: "%{username} has registered your rating. The transaction is closed."
+    payout:
+      create: accepted payment application
+      fail: failed payment
+      pay: completed payment
+    post:
+      closed: post is closed
+    function_updated: function updated
+    service_maintenanced: announce of service maintenance
+    holiday_announce: announce of holidays
+    like:
+      create: your post liked
+
+  # business_registration
+  business_registration:
+    title: 事業登録用プロフィール
+    last_name: 性 (漢字)
+    first_name: 名 (漢字)
+    last_name_kana: 性 (ひらがな)
+    first_name_kana: 名 (ひらがな)
+    name: 氏名 (漢字)
+    name_kana: 氏名 (ひらがな)
+    birthday: 生年月日
+    birth_year: 西暦
+    birth_month: 月
+    birth_day: 日
+    gender: 性別
+    phone: 電話番号
+    country: 国
+    id_front: 写真付き身分証ー表
+    id_back: 写真付き身分証ー裏
+    industry: 業種
+    buisiness_type: ビジネスのタイプ
+    buisiness_web_url: ビジネスのWebサイト
+    approved: 提出済み
+
+    placeholder:
+      email: 108sharing@gmail.com
+      phone: Half-width numbers (without hyphens)
+      zipcode: Half-width numbers (without hyphens)
+      address: Prefecture / city / town / After the town address
+      building: Buildings and room number
+      building_kana: Buildings and room number(Hiragana)
+      industry: Select industry
+      buisiness_type: ビジネスのタイプ
+      buisiness_web_url: https://example.com
+
+  # role
+  role:
+    admin: Admin
+    host: Host
+    guest: Guest
+
+  # provider
+  provider:
+    facebook: Facebook
+    google_oauth2: Google
+    twitter: Twitter
+    stripe_connect: Stripe

@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.reservation") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.reservation") } %>
+
+<%= react_component("pages/admin/reservations",
+  { reservations: @reservations_json },
+  prerender: false) %>

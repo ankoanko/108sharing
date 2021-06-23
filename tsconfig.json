@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom", "es2019"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "frontend/*"]
+    },
+    "sourceMap": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "target": "es5"
+  },
+  "include": [
+    "frontend/**/*.ts",
+    "frontend/**/*.tsx"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "vendor",
+    "public",
+    "**/setupEnzyme.ts",
+    "**/*.mock.ts",
+    "**/__*__"
+  ],
+  "compileOnSave": false
+}

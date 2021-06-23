@@ -1,0 +1,6 @@
+<% set_meta_tags title: I18n.t("activerecord.models.tag") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.tag") } %>
+
+<%= react_component("pages/admin/tags",
+  { tags: @tags_json },
+  prerender: false) %>

@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <div class="navbar-item">
+      <%= link_to root_path do %>
+        <%= image_tag src="/images/logo.svg", alt: "meeit.biz" %>
+      <% end %>
+    </div>
+    <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <% if user_signed_in? %>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link u-text--link is-arrowless">
+            <%= image_tag src="/images/no-avatar.svg", class: "c-icon--user" %>
+            <span class="u-margin--l5"><%= current_user.username %></span>            
+          </div>
+          <div class="navbar-dropdown is-right">
+            <%= link_to 'ユーザー設定', '/views/settings/users/profile.html', class: "navbar-item" %>
+            <%= link_to 'ヘルプ', '#', class: "navbar-item" %>
+            <%= link_to 'フィードバック', '#', class: "navbar-item" %>
+            <%= link_to '問い合わせ', '#', class: "navbar-item" %>
+            <hr class="navbar-divider">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "navbar-item" %>
+          </div>
+        </div>
+      <% else %>
+        <%= link_to 'Sign In', new_user_session_path, class: "button is-black u-margin--l10" %>
+        <%= link_to 'Sign Up', new_user_registration_path, class: "button is-white u-margin--l10" %>
+      <% end %>
+    </div>
+  </div>
+</nav>

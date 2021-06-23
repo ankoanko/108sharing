@@ -1,0 +1,678 @@
+ja:
+  #
+  # Generic
+  #
+  generic:
+    about_guest: ゲストについて
+    about_host: ホストについて
+    access: アクセス
+    accounts: アカウント
+    action: 操作
+    address: 住所
+    ancestry: 親カテゴリ
+    announcement: お知らせ
+    apply: 適用
+    approve: 受け入れる
+    area: エリア
+    back_to_index: 一覧へ戻る
+    back: 戻る
+    bank_account: 口座情報
+    bio: 自己紹介
+    calender: カレンダー
+    cancel: キャンセル
+    capacity: 容量
+    caption: キャプション
+    card: カード
+    category: カテゴリ
+    change: 変更
+    change_status: ステータス変更
+    check_in: チェックイン
+    check_out: チェックアウト
+    city: 都市
+    clear: クリア
+    close: 閉じる
+    conditions: 状態
+    confirm_payment_method: "支払い方法をご確認ください"
+    contact: お問い合わせ
+    create_new: 新規作成
+    create_new_account: 新しいアカウントを作成
+    create: 作成
+    created_at: 作成日
+    connecting_accounts: 連携済みのソーシャルアカウント
+    date: 日付
+    decline: 断る
+    delete: 削除
+    delete_image: 画像を削除
+    description: 説明
+    download: ダウンロード
+    suspended: 停止
+    edit: 編集
+    email: メールアドレス
+    enter_reply: 返信を入力
+    execution: 実行
+    expiration_date: 有効期限
+    filter: フィルター
+    functionality: 機能性
+    guest: ゲスト
+    host: ホスト
+    id: ID
+    identification: 身分証
+    image: 画像
+    item: ポスト
+    keyword: キーワード
+    label_no: いいえ
+    label_yes: はい
+    login: ログイン
+    map: マップ
+    message: メッセージ
+    name: 名前
+    next: 次へ
+    note: 備考
+    notification: 通知
+    ok: OK
+    password: パスワード
+    pay: 支払う
+    payment: 支払い
+    payment_method: 支払い方法
+    per_day: / 1日
+    period: 期間
+    photo: 写真
+    position: 位置
+    post: 投稿する
+    prefectures: 都道府県
+    price: 価格
+    profile: プロフィール
+    publication_date: 公開日
+    publish: 公開
+    published: 公開済み
+    receipt: 領収書
+    registration: 登録
+    reply: 返信する
+    required: 必須
+    reservation: 予約する
+    review_count: "%{count}件のレビュー"
+    response_from: "%{user}さんからの返信"
+    role: 権限
+    save: 保存
+    select_image: 画像を選択
+    select_file: ファイルを選択
+    send: 送信
+    setting: 設定
+    show_detail: 詳細を見る
+    signup: サインアップ
+    size: サイズ
+    status: ステータス
+    street1: 住所1
+    street2: 住所2
+    submit: 送信する
+    tag: タグ
+    to_index: 一覧へ
+    today: 本日
+    total: 合計
+    trimming: トリミングする
+    unlink: 解除
+    update: 更新
+    updated_at: 更新日
+    url: URL
+    user: ユーザー
+    username: ユーザー名
+    value: 値
+    zipcode: 郵便番号
+    time_ago: "%{time}前"
+
+  button:
+    modify: 修正する
+    send: 送信する
+    go_to_top: トップページへ戻る
+    search: 検索
+    pay: 支払う
+    show_map: 地図を表示
+    reload: リロード
+
+  search_pan:
+    title: 108Sharingでまだ体験したことのない旅をしよう
+    anywhere: どこでも
+    search: 探す
+    title_recommend: おすすめのエリア
+    tokyo: 東京
+    osaka: 大阪
+    kyoto: 京都
+    select_area: エリアを選択
+    sapporo: 札幌
+    title_type: 部屋のタイプから探す
+
+  #
+  # Meta title
+  #
+
+  meta:
+    post:
+      index: 登録済みポスト
+      new: ポストの作成
+      edit: "ポストの編集 - %{post_name}"
+      search: ポストの検索
+
+  #
+  # Domain
+  #
+
+  # post
+  post:
+    address_has_entered: 入力済み
+    basic_info: 基本情報
+    cannot_reserve_own_post: 自分の投稿には予約できません
+    create_post: ポストの新規作成
+    favorite_post_heading: お気に入りしたポスト
+    image_has_uploaded: アップロード済み
+    input_address: 住所の入力
+    input_basic_info: 基本情報の入力
+    it_is_your_post: あなたの投稿です
+    no_search_result: 検索結果がありません
+    no_registered_post: 登録済のポストはありません
+    please_input_address: 設定してください
+    please_upload_image: 1枚以上設定してください
+    post_description: 商品説明
+    post_name: 商品名称
+    price_max: 最高料金
+    price_min: 最低料金
+    related_posts: 関連するポスト
+    result_count_favorite: "%{count}件"
+    result_count_search: "%{count}件の検索結果"
+    result_keyword: "「%{keyword}」の検索結果"
+    users_post_none: "%{username}さんのポストはありません"
+    users_post: "%{username}さんのポスト"
+    view_post: ポストを見る
+
+    nav:
+      info:
+        label: 基本情報
+        note: 設定してください
+      address:
+        label: 住所
+        note: 設定してください
+      images:
+        label: 写真
+        note: 1枚以上設定してください
+      calendar:
+        label: カレンダー
+        note: 設定してください
+
+  # favorite
+  favorite:
+    no_favorites: お気に入りはありません
+    is_liked: お気に入りに追加済み
+    add_like: お気に入りに追加
+
+  # reservation
+  reservation:
+    index: 予約一覧
+    about_reservation: 予約について
+    add_image: 画像を追加
+    back_to_posts: ポスト一覧へ戻る
+    send_message_to_host: ホストにメッセージを送信
+    input_message: メッセージを入力
+    last_message: 最新のメッセージ
+    no_reservations: 予約はありません
+    price: 料金
+    remarks_notes: 注意事項・備考など
+    reservation_completed: 予約が完了しました！
+    reservation_date: 予約日
+    reservation_detail: 予約の詳細
+    show_passed_reservation: 過去の予約を表示
+    to_messages: メッセージへ移動
+
+  # receipt
+  receipt:
+    receipt_address: 宛名
+    create_receipt: 領収書を作成
+    note: ※ 宛名の設定は1回のみとなりますのでご注意ください
+
+  # cancel
+  cancel:
+    cancel_reservation_confirmation: "キャンセル料金が ¥%{price}かかります。よろしいですか？"
+    cancel_reservation_no_price: キャンセル料金はかかりません。
+    cancel_reason: キャンセル理由
+    cancel_reservation: キャンセル
+
+  # review
+  review:
+    review_count: "レビュー %{count}件"
+    write_review: レビューを書く
+    add_review: レビューを追加
+    completed: レビューが送信されました
+    back_to_index: 予約一覧へ戻る
+    rating: 評価
+    description: レビュー内容
+
+  # bank account
+  bank_account_info:
+    bank_name: 金融機関名
+    branch_name: 支店名
+    number: 口座番号
+    account_type: 科目
+    name: 氏名
+    bank_code: 金融機関コード
+    branch_code: 支店コード
+    placeholder:
+      bank_name: みずほ銀行
+      branch_name: 東京支店
+      number: "0000000"
+      account_type: 普通
+      name: シェアエコタロウ
+      bank_code: "12"
+      branch_code: "123"
+
+  # card
+  card:
+    card_end: 末尾
+    delete_card: カードを削除
+    new_card: 新しいカード
+    register_card: カードの登録
+    registered_cards: 登録カード情報
+    note: お客様のクレジットカード情報は決済代行会社に保管されるので、当社が保管することはございません。
+
+  # contact
+  contact:
+    name: 名前
+    email: メールアドレス
+    subject: 件名
+    body: お問い合わせ内容
+    confirmation: 以下の内容でお問い合わせを送信します、よろしいですか？
+    completed: 問い合わせが完了しました
+    completed_message: "ご記入していただいた内容が送信されました。\n近日中に担当者よりご連絡いたします。"
+
+  # admin
+  admin:
+    create_new: "%{model}の新規作成"
+    edit: "%{model}の編集"
+    settings:
+      default_site: ウェブサイトの名前
+      default_site_caption: (titleタグ | ウェブサイトの名前)
+      default_title: デフォルトのtitleタグ
+      default_description: descriptionタグ
+      default_keywords: keywordsタグ
+      ga_tracking_id: Google Analytics トラッキングID
+      skip_profile: プロフィールの設定なしでサービスを使用できる
+      skip_identification: 身分証の確認なしでサービスを使用できる
+
+  # settings
+  settings:
+    avatar_image: プロフィール画像
+    change_email_address: メールアドレスの変更
+    change_password: パスワードの変更
+    confirm_email: 宛てに確認メールを送信しました。ご確認ください。
+    confirmation_email_will_be_sent_to_this_email_address: 確認メールがこのメールアドレスに届きます
+    current_password: 現在のパスワード
+    delete_provider: 解除する
+    email_notification: メール通知
+    identification: 身分証
+    identification_has_sent: 身分証を提出しました
+    new_email: 新しいメールアドレス
+    new_password: 新しいパスワード
+    set_identification: 身分証の設定
+    set_notification: 通知の設定
+    authenticated_items: 認証が必要な項目
+    authenticated: 認証済み
+    unauthenticated: 未承認
+    set_profile: プロフィールを設定する
+    set_identification_for_reservation: 予約をするには身分証を設定してください
+    set_profile_for_reservation: 予約をするにはプロフィールを設定してください
+
+    # TODO
+    notification:
+      form:
+        email_notification:
+          label: 通知設定
+
+  # conversation
+  conversation:
+    last_message: 最新のメッセージ
+
+  # notifications
+  notifications:
+    no_notifications: お知らせはありません
+
+  # session
+  session:
+    forgot_password: パスワードをお忘れの場合
+    have_account: すでにアカウントをお持ちの方はログイン
+    invalid_mail_or_password: メールアドレスまたはパスワードが違います
+    suspended: 現在このアカウントは停止されています。事務局にご連絡ください
+    confirm_email: 宛てに確認メールを送信しました。ご確認ください。
+    or: または
+    login_with: でログイン
+    login_with_another_services: 他のサービスと連携してログイン
+
+  # password
+  password:
+    new_password: 新しいパスワード
+    new_password_confirmation: 新しいパスワード(確認用)
+
+  # mailer
+  mailer:
+    to: "%{username} 様"
+    new_message_from: "%{site_name} からの新着メッセージ"
+
+  #
+  # Component
+  #
+
+  # avatar
+  avatar:
+    avatar_created_at: "%{created_at}からメンバー"
+    avatar_review: "%{count}件のレビュー"
+
+  # top_nav
+  top_nav:
+    admin: 管理
+    bank_account: 口座情報
+    contacts: お問い合わせ
+    create_post: ポストを作成
+    favorites: お気に入り
+    login: ログイン
+    logout: ログアウト
+    mypage: マイページ
+    posts: 登録済みポスト
+    reservations: "%{name}予約一覧"
+    settings: 設定
+    signup: 登録する
+
+  # footer
+  footer:
+    intro: シェアリングエコノミーにおける車輪の再開発を０に。今すぐ、誰でも、ノウハウなしでシェアリングエコノミービジネスを始めよう。
+    nav:
+      company: 企業情報
+      blog: ブログ
+      operating_company: 運営会社
+      contact: お問い合わせ
+      support: サポート
+      privacy_policy: プライバシーポリシー
+      term_of_use: 利用規約
+      faq: FAQ
+
+  # dropzone
+  dropzone:
+    drop: 画像をドロップ
+    invalid_file: 対応していないファイル形式です
+    select_or_drag_and_drop: 画像を選択 または 画像をドロップ
+    too_large: サイズが大きすぎます
+
+  # calendar
+  calendar:
+    available: 利用可能
+    blocked: ブロック済み
+    cannot_edit_reserved_days: 予約済みの日付は編集できません
+    selected_date: 選択された日付
+    state: 利用可能状況
+
+  # placeholder
+  placeholder:
+    post_price: 例） 100000
+    review_body: ご自由に入力ください
+
+  #
+  # System
+  #
+
+  # errors
+  common_errors:
+    empty: 必須入力項目です
+    too_long: 文字以内で入力してください
+    system_error: システムエラーが発生しました。画面をリロードしてください。
+
+  # flash
+  flash:
+    model:
+      create:
+        success: "%{model}を登録しました"
+        failure: "%{model}の登録に失敗しました"
+      update:
+        success: "%{model}を更新しました"
+        failure: "%{model}の更新に失敗しました"
+      delete:
+        success: "%{model}の削除に成功しました"
+        failure: "%{model}の削除に失敗しました"
+      approve:
+        success: "%{model}の承認に成功しました"
+        failure: "%{model}の承認に失敗しました"
+      decline:
+        success: "%{model}の拒否に成功しました"
+        failure: "%{model}の拒否に失敗しました"
+      cancel:
+        success: "%{model}のキャンセルに成功しました。"
+        failure: "%{model}のキャンセルに失敗しました。"
+    social_profile:
+      destroy:
+        success: "%{provider}との紐付けを解除しました。"
+    email_blank: "通知を受けるためメールアドレスも登録しましょう"
+
+  # mailer
+  contact_mailer:
+    notify:
+      subject: 問い合わせ
+      title: 問い合わせ内容
+      body:
+        subject: 件名
+        name: 氏名
+        body: 内容
+        email: メールアドレス
+  message_mailer:
+    notify:
+      subject: "新規メッセージがとどきました"
+      title: 以下のURLからアクセスしてください
+
+  # activity message
+  activity_message:
+    reservation:
+      created:
+        to_host: |-
+          %{user_name}さんが%{service_name}を購入しました。下記の１～３ステップを確認してください。
+
+          １、鑑定を提供する場合は、承諾ボタンを押してください。何らかの事情で鑑定の提供を辞退したい場合は<FAQ>をご確認ください。
+
+          ２、<ユーザ名>さんとメッセージをやりとりし、鑑定実施の日程、及び提供方法（LINE、Skype、Zoomなど）を決定してください。提供方法についてはこちらの<FAQ>をご確認ください。
+
+          ３、鑑定を実施し、最後に必ず鑑定終了を押してください。
+
+          ※承認、鑑定終了ボタンが押されないと売上として計上されません。
+        to_guest: "%{service_name}のご購入が完了しました。%{user_name}さんに挨拶のメッセージを送ってみましょう!"
+      approved:
+        to_host: "%{service_name}の鑑定を承諾しました。"
+        to_guest: |-
+          %{service_name}の鑑定が承諾されました。%{user_name}さんとメッセージをやりとりし、鑑定実施の日程、及び提供方法（LINE、Skype、Zoomなど）を決定してください。
+          提供方法についてはこちらの<FAQ>をご確認ください。
+      declined:
+        to_host: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+        to_guest: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+      canceled:
+        to_host: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+        to_guest: "ご購入されたサービスがキャンセルになりました。%{service_name}"
+      finished:
+        to_host: |-
+          %{service_name}の鑑定が終了しました。
+          %{user_name}さんへのカルテを書きましょう。
+        to_guest: |-
+          %{service_name}の鑑定が終了しました。
+          レビューを書きましょう。
+    review:
+      created:
+        to_host: |-
+          %{user_name}さんからレビューが届きました。レビューに返信して、エンゲージメントを高めましょう!
+          %{review_url}
+        to_guest: "%{service_name}へのレビューの記載が完了しました。"
+    result:
+      created:
+        to_host: "%{user_name}さんへのカルテの記載が完了しました。"
+        to_guest: |-
+          %{service_name}のカルテが届きました!早速内容を確認しましょう。
+          %{result_url}
+    review_reply:
+      created:
+        to_host: "%{user_name}さんへのレビューの返信が完了しました。"
+        to_guest: |-
+          %{service_name}へのレビューへの返信が届きました!早速内容を確認しましょう。
+          %{review_url}
+
+  # payment history
+  payment_history:
+    history: "支払い履歴"
+    day: "支払日"
+    method: "支払い方法"
+    price: "支払い金額"
+    reservation:
+      created:
+        to_host: "%{user_name}さんが%{service_name} ¥%{price}を購入しました"
+      declined:
+        to_host: "%{user_name}さんが購入した%{service_name} ¥%{price}がキャンセルされました"
+      cancelled:
+        to_host: "%{user_name}さんが購入した%{service_name} ¥%{price}がキャンセルされました"
+    payout:
+      created:
+        to_host: "売上 ¥%{amount}の振込み申請が完了しました"
+      failed:
+        to_host: "売上 ¥%{amount}の振込みが失敗しました"
+      paid:
+        to_host: "売上 ¥%{amount}の振込みが完了しました"
+
+  # enums
+  enums:
+    bank_account:
+      account_type:
+        saving: 普通
+        checking: 当座
+    identification:
+      workflow_state:
+        requested: リクエスト中
+        approved: 承認済
+        declined: 拒否済
+      workflow_state_message:
+        requested: 身分証の情報を確認中です。今しばらくお待ち下さい。
+        approved: 本人確認済み
+        declined: 身分証の申請が受理されませんでした
+    post:
+      aasm_state:
+        draft: 編集中
+        published: 公開
+        closed: 非公開
+    reservation:
+      workflow_state:
+        requested: リクエスト中
+        approved: リクエスト承認/支払済
+        declined: リクエスト拒否済
+        canceled: キャンセル済
+      applied:
+        message_subject: "%{postname}に購入申請しました。"
+        notification_body: "%{username}さんから 「%{postname}」に購入希望が届いています。購入承認してください"
+      accepted:
+        message_subject: "「%{postname}」に購入承認しました"
+        notification_body: "%{username}さんから 「%{postname}」が承認されました。支払いしてください。"
+      confirmed_payment:
+        message_subject: "「%{postname}」に支払い確認しました。"
+        notification_body: "%{username}さんが 「%{postname}」の支払いを確認しました。商品を受け取ったら評価を登録してください。"
+      received:
+        message_subject: "「%{postname}」の受け取り確認しました。"
+        notification_body: "%{username}さんから 「%{postname}」に受け取り確認されました。評価をお待ちください。"
+      requester_reviewed:
+        message_subject: "「%{postname}」さんの評価を登録しました。"
+        notification_body: "%{username}さんからの評価がつきました。評価を登録してください。"
+      requestee_reviewed:
+        message_subject: "「%{postname}」評価を登録しました。取引終了です。"
+        notification_body: "%{username}さんからの評価がつきました。取引終了です。"
+    violation_report:
+      spam: "スパム"
+      dating: "異性交際/出会い目的"
+      nuisance: "迷惑行為"
+      other: "その他"
+
+  # notification
+  notification:
+    contact:
+      created: "新しい問い合わせがありました 「%{subject}」"
+    reservation:
+      approved: "予約が承認されました"
+      created: "新しい予約リクエストが届きました！"
+      declined: "予約が拒否されました"
+      canceled: "予約がキャンセルされました"
+    identification:
+      approved: "身分証が承認されました"
+      requested: "身分証の承認リクエストが届きました"
+      declined: "身分証が拒否されました"
+    message:
+      created: "%{username}さんから新しいメッセージが届きました。"
+    state:
+      applied:
+        message_subject: "%{postname}に購入申請しました。"
+        notification_body: "%{username}さんから 「%{postname}」に購入希望が届いています。購入承認してください"
+      received:
+        message_subject: "「%{postname}」の受け取り確認しました。"
+        notification_body: "%{username}さんから 「%{postname}」に受け取り確認されました。評価をお待ちください。"
+      first_reviewed:
+        message_subject: "「%{postname}」さんの評価を登録しました。"
+        notification_body: "%{username}さんからの評価がつきました。評価を登録してください。"
+      accepted:
+        message_subject: "「%{postname}」に購入承認しました"
+        notification_body: "%{username}さんから 「%{postname}」が承認されました。支払いしてください。"
+      confirmed_payment:
+        message_subject: "「%{postname}」に支払い確認しました。"
+        notification_body: "%{username}さんが 「%{postname}」の支払いを確認しました。商品を受け取ったら評価を登録してください。"
+      second_reviewed:
+        message_subject: "「%{postname}」評価を登録しました。取引終了です。"
+        notification_body: "%{username}さんからの評価がつきました。取引終了です。"
+    payout:
+      create: 支払い申請を受け付けました
+      fail: 支払いが失敗しました
+      pay: 支払いが完了しました
+    post:
+      closed: サービスが強制停止となりました
+    function_updated: 機能をリニューアル（追加）しました。
+    service_maintenanced: メンテナンスに伴う一時停止のお知らせ
+    holiday_announce: 年始年末・夏季休暇のお知らせ
+    like:
+      create: いいねがつきました
+
+  # business_registration
+  business_registration:
+    title: 事業登録用プロフィール
+    last_name: 性 (漢字)
+    first_name: 名 (漢字)
+    last_name_kana: 性 (ひらがな)
+    first_name_kana: 名 (ひらがな)
+    name: 氏名 (漢字)
+    name_kana: 氏名 (ひらがな)
+    birthday: 生年月日
+    birth_year: 西暦
+    birth_month: 月
+    birth_day: 日
+    gender: 性別
+    phone: 電話番号
+    country: 国
+    id_front: 写真付き身分証ー表
+    id_back: 写真付き身分証ー裏
+    industry: 業種
+    buisiness_type: ビジネスのタイプ
+    buisiness_web_url: ビジネスのWebサイト
+    approved: 提出済み
+
+    placeholder:
+      email: 108sharing@gmail.com
+      phone: 半角数字 (ハイフンなし)
+      zipcode: 半角数字 (ハイフンなし)
+      address: 都道府県・市町村・番地
+      building: 建物・部屋番号
+      building_kana: 建物・部屋番号 (カタカナ)
+      industry: 業種を選択
+      buisiness_type: ビジネスのタイプ
+      buisiness_web_url: https://example.com
+
+  # role
+  role:
+    admin: 管理者
+    host: ホスト
+    guest: ゲスト
+
+  # provider
+  provider:
+    facebook: Facebook
+    google_oauth2: Google
+    twitter: Twitter
+    stripe_connect: Stripe

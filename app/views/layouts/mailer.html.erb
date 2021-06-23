@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        color: #333;
+      }
+      h1 {
+        margin: 0;
+      }
+      .header {
+        background-color: #FFF;
+        width: 100%;
+        height: 48px;
+      }
+      .logo {
+        width: 132px;
+        vertical-align: middle;
+      }
+      .username {
+        font-size: 14px;
+      }
+      .heading {
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+      }
+      .wrapper {
+        max-width: 620px;
+        margin: 0 auto;
+        box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
+        border: solid 1px #e2e2e2;
+      }
+      .main {
+        width: 100%;
+        background-color: #F6F8F9;
+      }
+      .panel {
+        width: 100%;
+        background-color: #FFF;
+        border: solid 1px #e2e2e2;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <table class="header">
+        <tbody>
+          <tr>
+            <td width="24"></td>
+            <td align="left" valign="middle">
+              <a href="<%= root_url %>" target="_blank">
+                <img class="logo" src="<%= root_url %>images/custom/logo-black.svg" alt="">
+              </a>
+            </td>
+            <td align="right" valign="middle">
+              <div class="username"><%= I18n.t('mailer.to', username: @user.username) if @user.present? %></div>
+            </td>
+            <td width="24"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="main">
+        <tbody>
+          <tr height="24"></tr>
+          <tr>
+            <td width="24"></td>
+            <td><h1 class="heading"><%= I18n.t('mailer.new_message_from', site_name: Setting.default_site) %></h1></td>
+            <td width="24"></td>
+          </tr>
+          <tr height="12"></tr>
+          <tr>
+            <td width="24"></td>
+            <td>
+              <table class="panel">
+                <tbody>
+                  <tr height="24"></tr>
+                  <tr>
+                    <td width="24"></td>
+                    <td>
+                      <%= simple_format(yield) %>
+                    </td>
+                    <td width="24"></td>
+                  </tr>
+                  <tr height="24"></tr>
+                </tbody>
+              </table>
+            </td>
+            <td width="24"></td>
+          </tr>
+          <tr height="48"></tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

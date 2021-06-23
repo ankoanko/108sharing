@@ -1,0 +1,11 @@
+<% set_meta_tags title: I18n.t("meta.post.search") %>
+<% set_meta_tags og: { title: I18n.t("meta.post.search") } %>
+
+<%= react_component("pages/posts/search/",
+  { isSignedIn: user_signed_in?,
+    posts: @posts_json,
+    categories: @categories,
+    tags: @tags,
+    conditions: @conditions
+  },
+  prerender: false) %>

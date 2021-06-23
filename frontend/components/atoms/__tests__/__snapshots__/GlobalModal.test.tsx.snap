@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GlobalModal /> matches to the snapshot 1`] = `
+<ModalLayout
+  closeModal={[Function]}
+  isOpen={false}
+  title=""
+>
+  <div
+    className="flex justify-center mt-6"
+  >
+    <Button
+      buttonType="primary"
+      className="ml-4"
+      handleClick={[Function]}
+      size="small"
+    />
+  </div>
+</ModalLayout>
+`;

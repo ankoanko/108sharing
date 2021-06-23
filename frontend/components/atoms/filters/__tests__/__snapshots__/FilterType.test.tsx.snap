@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atoms/filters/FilterType.tsx should matches to the snapshot 1`] = `
+<FilterLayout
+  hasValue={false}
+  label="Type"
+  onApply={[Function]}
+  onClear={[Function]}
+  setPanelIsOpen={[Function]}
+>
+  <form
+    action=""
+  >
+    <div>
+      <div
+        className="mt-3 first:mt-0"
+        key="1"
+      >
+        <CheckBox
+          checked={false}
+          label="Type 1"
+          name="type_ids"
+          onChangeHandler={[Function]}
+          value="1"
+        />
+      </div>
+      <div
+        className="mt-3 first:mt-0"
+        key="2"
+      >
+        <CheckBox
+          checked={false}
+          label="Type 2"
+          name="type_ids"
+          onChangeHandler={[Function]}
+          value="2"
+        />
+      </div>
+      <div
+        className="mt-3 first:mt-0"
+        key="3"
+      >
+        <CheckBox
+          checked={false}
+          label="Type 3"
+          name="type_ids"
+          onChangeHandler={[Function]}
+          value="3"
+        />
+      </div>
+    </div>
+  </form>
+</FilterLayout>
+`;

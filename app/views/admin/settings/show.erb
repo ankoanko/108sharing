@@ -1,0 +1,8 @@
+<% set_meta_tags title: I18n.t("activerecord.models.setting") %>
+<% set_meta_tags og: { title: I18n.t("activerecord.models.setting") } %>
+
+<%= react_component("pages/admin/settings/show",
+  {
+    settings: @settings,
+  },
+  prerender: false) %>

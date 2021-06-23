@@ -1,0 +1,11 @@
+<%= @contact.name %> 様
+
+以下の内容でお問い合わせを受け付けました。
+
+名前: <%= @contact.name %>
+メールアドレス: <%= @contact.email %>
+件名: <%= @contact.subject %>
+お問い合わせ内容:
+<%= @contact.body %>
+
+<%= Setting.default_site %>

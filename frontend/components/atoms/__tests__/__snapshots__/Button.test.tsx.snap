@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> matches to the snapshot 1`] = `
+<button
+  className="flex items-center justify-center rounded-full font-bold shadow-button focus:outline-none w-64 max-w-full h-12 text-base bg-gradient-primary text-white"
+  disabled={false}
+  onClick={[Function]}
+  type="submit"
+>
+  <span />
+</button>
+`;
