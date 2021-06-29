@@ -109,4 +109,13 @@ https://github.com/bulbinc/108sharing/wiki
 
 https://github.com/bulbinc/108sharing/blob/master/LICENSE.txt
 
+[108Sharingのライセンスについて]
+
+108Sharingはのライセンスはデュアルライセンス方式です。無償で利用できる「スタートアップライセンス」と、
+有償の「商用ライセンス」が選択できます。
+サービスの商用利用を開始した際には商用ライセンスの申し込みが必要になります。
+ライセンスに関して詳しくは公式サイトをご確認下さい。
+
+https://108sharing.com/price.html
+
 
