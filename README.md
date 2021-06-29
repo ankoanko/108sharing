@@ -105,4 +105,8 @@ Refer to the WIKI for more information:
 
 https://github.com/bulbinc/108sharing/wiki
 
+## LICENSE
+
+https://github.com/bulbinc/108sharing/blob/master/LICENSE.txt
+
 
