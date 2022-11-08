@@ -8,7 +8,7 @@ RUN apk add postgresql-dev
 RUN apk add postgresql-client
 RUN apk add tzdata
 RUN apk add graphicsmagick
-RUN gem install bundler:2.1.4
+RUN gem install bundler:2.2.14
 
 ENV PATH=/var/binstubs:$PATH \
     RAILS_LOG_TO_STDOUT=enabled \
