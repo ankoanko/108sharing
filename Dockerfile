@@ -1,10 +1,11 @@
-FROM node:12.16.1-alpine as node
-FROM ruby:2.6.5-alpine
+FROM node:14.16.0-alpine as node
+FROM ruby:2.7.2-alpine3.13
 
 RUN apk add git
 RUN apk add build-base
 RUN apk add libxml2-dev libxslt-dev
 RUN apk add postgresql-dev
+RUN apk add postgresql-client
 RUN apk add tzdata
 RUN apk add graphicsmagick
 RUN gem install bundler:2.1.4
